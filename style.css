@@ -8,6 +8,12 @@
   --green-text: #2f5d46;
   --accent: #6b8f71;
   --gray: #eef1ee;
+  --learned-bg: #DDEBDD;
+  --learned-border: #6B8F71;
+  --review-bg: #EFEBD8;
+  --review-border: #B0A46A;
+  --not-yet-bg: #F1F3F1;
+  --not-yet-border: #C5CCC5;
 }
 
 * {
@@ -64,6 +70,96 @@ h1 {
   white-space: nowrap;
 }
 
+.mode-menu,
+.filter-panel,
+.voice-panel,
+.answer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.mode-button,
+.clear-button,
+.tag-button,
+.state-button,
+.speak-button {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--green-text);
+  border-radius: 999px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.voice-panel {
+  align-items: center;
+  border: 1px solid #d7e2da;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 10px 12px;
+  color: var(--green-text);
+}
+
+.voice-panel label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.92rem;
+  font-weight: 700;
+}
+
+.voice-panel select {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--green-text);
+  padding: 6px 8px;
+}
+
+.mode-button.active,
+.tag-button.active {
+  background: var(--soft);
+  border-color: var(--accent);
+}
+
+.filter-panel {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 12px;
+}
+
+.filter-status {
+  color: var(--green-text);
+  font-weight: 700;
+  padding: 6px 0;
+}
+
+.filter-groups {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.filter-group h3 {
+  margin: 4px 0 8px;
+  color: var(--green-text);
+  font-size: 0.98rem;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
 .day-nav {
   display: grid;
   grid-template-columns: 1fr 1.4fr 1fr;
@@ -73,7 +169,8 @@ h1 {
 }
 
 .day-nav button,
-.answer-button {
+.answer-button,
+.speak-button {
   border: 1px solid var(--border);
   background: var(--surface);
   color: var(--green-text);
@@ -84,7 +181,8 @@ h1 {
 }
 
 .day-nav button:hover,
-.answer-button:hover {
+.answer-button:hover,
+.speak-button:hover {
   background: var(--soft);
   border-color: var(--accent);
 }
@@ -156,6 +254,14 @@ h1 {
   font-weight: 700;
 }
 
+.answer-actions {
+  margin: 10px 0;
+}
+
+.speak-button {
+  padding: 10px 12px;
+}
+
 .details {
   margin-top: 10px;
 }
@@ -184,21 +290,49 @@ h1 {
   padding: 3px 8px;
 }
 
-.progress-row {
+button.badge {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+button.badge:hover {
+  border-color: var(--accent);
+  background: #dce9e1;
+}
+
+.progress-buttons {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: 8px;
   margin-top: 12px;
 }
 
-.progress-row select {
-  min-width: 150px;
-  border: 1px solid var(--border);
+.state-button {
   border-radius: 8px;
-  background: var(--surface);
+  padding: 9px 12px;
+}
+
+.state-button.not-yet {
+  background: var(--not-yet-bg);
+  border-color: var(--not-yet-border);
+  color: #536059;
+}
+
+.state-button.learned {
+  background: var(--learned-bg);
+  border-color: var(--learned-border);
   color: var(--green-text);
-  padding: 8px;
+}
+
+.state-button.review {
+  background: var(--review-bg);
+  border-color: var(--review-border);
+  color: #5f5a36;
+}
+
+.state-button.active {
+  box-shadow: inset 0 0 0 2px currentColor;
+  font-weight: 800;
 }
 
 .footer-summary {
@@ -234,6 +368,24 @@ h1 {
     grid-template-columns: 1fr 1fr;
   }
 
+  .filter-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .clear-button,
+  .mode-button,
+  .tag-button,
+  .state-button,
+  .speak-button {
+    width: 100%;
+    white-space: normal;
+  }
+
+  .voice-panel label,
+  .voice-panel select {
+    width: 100%;
+  }
+
   .day-display {
     grid-column: 1 / -1;
     grid-row: 1;
@@ -249,13 +401,7 @@ h1 {
     grid-row: 2;
   }
 
-  .card-top,
-  .progress-row {
+  .card-top {
     display: block;
-  }
-
-  .progress-row select {
-    width: 100%;
-    margin-top: 8px;
   }
 }

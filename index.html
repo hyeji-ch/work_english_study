@@ -16,6 +16,37 @@
       <div class="summary-pill" id="total-progress">Loading...</div>
     </header>
 
+    <nav class="mode-menu" aria-label="Study mode">
+      <button class="mode-button active" type="button" data-mode="daily">Daily Study</button>
+      <button class="mode-button" type="button" data-mode="tag">Tag Review</button>
+      <button class="mode-button" type="button" data-mode="review">다시 볼 문장</button>
+    </nav>
+
+    <section class="filter-panel hidden" id="filter-panel">
+      <div class="filter-status" id="filter-status">No tag filter selected.</div>
+      <button class="clear-button" id="clear-filter" type="button">Clear filter</button>
+      <div class="filter-groups" id="filter-groups"></div>
+    </section>
+    <section class="voice-panel" id="voice-panel">
+      <span id="speech-support">Voice: checking browser support...</span>
+      <label>
+        Voice
+        <select id="voice-mode">
+          <option value="auto">Auto</option>
+          <option value="en-US">US English</option>
+          <option value="en-GB">UK English</option>
+        </select>
+      </label>
+      <label>
+        Speed
+        <select id="voice-rate">
+          <option value="0.8">0.8</option>
+          <option value="1.0" selected>1.0</option>
+          <option value="1.1">1.1</option>
+        </select>
+      </label>
+    </section>
+
     <section class="day-nav" aria-label="Day navigation">
       <button id="prev-day" type="button">Previous Day</button>
       <div class="day-display">
@@ -29,9 +60,9 @@
     <section class="cards" id="cards"></section>
 
     <footer class="footer-summary">
-      <span id="studied-count">Studied: 0</span>
-      <span id="review-count">Need review: 0</span>
-      <span id="mastered-count">Mastered: 0</span>
+      <span id="mastered-count">익힌 문장: 0</span>
+      <span id="review-count">다시 볼 문장: 0</span>
+      <span id="not-yet-count">아직: 0</span>
     </footer>
   </main>
   <script src="app.js"></script>
