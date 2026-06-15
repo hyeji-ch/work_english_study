@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Work English Study</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="app-header">
+      <div>
+        <h1>Work English Study</h1>
+        <p>Antibody Engineering / Biotherapeutics R&amp;D</p>
+      </div>
+      <div class="summary-pill" id="total-progress">Loading...</div>
+    </header>
+
+    <section class="day-nav" aria-label="Day navigation">
+      <button id="prev-day" type="button">Previous Day</button>
+      <div class="day-display">
+        <strong id="week-day-label">Week 1 / Day 1</strong>
+        <span id="day-count-label">Day 1 of 56</span>
+      </div>
+      <button id="next-day" type="button">Next Day</button>
+    </section>
+
+    <section class="day-progress" id="day-progress"></section>
+    <section class="cards" id="cards"></section>
+
+    <footer class="footer-summary">
+      <span id="studied-count">Studied: 0</span>
+      <span id="review-count">Need review: 0</span>
+      <span id="mastered-count">Mastered: 0</span>
+    </footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

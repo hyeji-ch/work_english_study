@@ -1,0 +1,4762 @@
+[
+  {
+    "id": "W01-D01-S01",
+    "week": 1,
+    "day": 1,
+    "sentence_number": 1,
+    "korean": "lead antibody에서는 binding profile가 핵심 지표입니다.",
+    "english": "Binding profile is the key readout for lead antibody.",
+    "chunk": "Binding profile is / the key readout / for lead antibody.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "The selection rationale is the key point for this review.",
+      "Confirmatory testing is the next step for lead antibody."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Email",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D01-S02",
+    "week": 1,
+    "day": 1,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 the selection rationale을 뒷받침합니다.",
+    "english": "The current data support the selection rationale.",
+    "chunk": "The current data / support / the selection rationale.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support the selection rationale.",
+      "The current FACS data support the selection rationale."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Meeting",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D01-S03",
+    "week": 1,
+    "day": 1,
+    "sentence_number": 3,
+    "korean": "연구 목적에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for study objective.",
+    "chunk": "We need / orthogonal confirmation / for study objective.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for study objective.",
+      "We need FACS confirmation for study objective."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Report",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D01-S04",
+    "week": 1,
+    "day": 1,
+    "sentence_number": 4,
+    "korean": "lead antibody에서는 limited evidence가 주요 리스크입니다.",
+    "english": "Limited evidence remains the main risk for lead antibody.",
+    "chunk": "Limited evidence remains / the main risk / for lead antibody.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Limited evidence remains the key concern.",
+      "Limited evidence remains relevant for prioritization."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Presentation",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D01-S05",
+    "week": 1,
+    "day": 1,
+    "sentence_number": 5,
+    "korean": "다음 단계로 confirmatory testing을 우선하겠습니다.",
+    "english": "We should prioritize confirmatory testing in the next step.",
+    "chunk": "We should prioritize / confirmatory testing / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize confirmatory testing before nomination.",
+      "We should prioritize confirmatory testing for risk reduction."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Vendor",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D02-S01",
+    "week": 1,
+    "day": 2,
+    "sentence_number": 1,
+    "korean": "bispecific panel에서는 activity readout가 핵심 지표입니다.",
+    "english": "Activity readout is the key readout for bispecific panel.",
+    "chunk": "Activity readout is / the key readout / for bispecific panel.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Clone ranking is the key point for this review.",
+      "Data review is the next step for bispecific panel."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Meeting",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D02-S02",
+    "week": 1,
+    "day": 2,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 clone ranking을 뒷받침합니다.",
+    "english": "The current data support clone ranking.",
+    "chunk": "The current data / support / clone ranking.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support clone ranking.",
+      "The current FACS data support clone ranking."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Report",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D02-S03",
+    "week": 1,
+    "day": 2,
+    "sentence_number": 3,
+    "korean": "결과 요약에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for result summary.",
+    "chunk": "We need / orthogonal confirmation / for result summary.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for result summary.",
+      "We need FACS confirmation for result summary."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Presentation",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D02-S04",
+    "week": 1,
+    "day": 2,
+    "sentence_number": 4,
+    "korean": "bispecific panel에서는 assay variability가 주요 리스크입니다.",
+    "english": "Assay variability remains the main risk for bispecific panel.",
+    "chunk": "Assay variability remains / the main risk / for bispecific panel.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Assay variability remains the key concern.",
+      "Assay variability remains relevant for prioritization."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Vendor",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D02-S05",
+    "week": 1,
+    "day": 2,
+    "sentence_number": 5,
+    "korean": "다음 단계로 data review을 우선하겠습니다.",
+    "english": "We should prioritize data review in the next step.",
+    "chunk": "We should prioritize / data review / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize data review before nomination.",
+      "We should prioritize data review for risk reduction."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Data Interpretation",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D03-S01",
+    "week": 1,
+    "day": 3,
+    "sentence_number": 1,
+    "korean": "early package에서는 sample coverage가 핵심 지표입니다.",
+    "english": "Sample coverage is the key readout for early package.",
+    "chunk": "Sample coverage is / the key readout / for early package.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "A cautious conclusion is the key point for this review.",
+      "More replicates is the next step for early package."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Report",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D03-S02",
+    "week": 1,
+    "day": 3,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 a cautious conclusion을 뒷받침합니다.",
+    "english": "The current data support a cautious conclusion.",
+    "chunk": "The current data / support / a cautious conclusion.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support a cautious conclusion.",
+      "The current FACS data support a cautious conclusion."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Presentation",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D03-S03",
+    "week": 1,
+    "day": 3,
+    "sentence_number": 3,
+    "korean": "데이터 한계에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for data limitation.",
+    "chunk": "We need / orthogonal confirmation / for data limitation.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for data limitation.",
+      "We need FACS confirmation for data limitation."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Vendor",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D03-S04",
+    "week": 1,
+    "day": 3,
+    "sentence_number": 4,
+    "korean": "early package에서는 small sample size가 주요 리스크입니다.",
+    "english": "Small sample size remains the main risk for early package.",
+    "chunk": "Small sample size remains / the main risk / for early package.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Small sample size remains the key concern.",
+      "Small sample size remains relevant for prioritization."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Data Interpretation",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D03-S05",
+    "week": 1,
+    "day": 3,
+    "sentence_number": 5,
+    "korean": "다음 단계로 more replicates을 우선하겠습니다.",
+    "english": "We should prioritize more replicates in the next step.",
+    "chunk": "We should prioritize / more replicates / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize more replicates before nomination.",
+      "We should prioritize more replicates for risk reduction."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Email",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D04-S01",
+    "week": 1,
+    "day": 4,
+    "sentence_number": 1,
+    "korean": "candidate set에서는 orthogonal evidence가 핵심 지표입니다.",
+    "english": "Orthogonal evidence is the key readout for candidate set.",
+    "chunk": "Orthogonal evidence is / the key readout / for candidate set.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "The current hypothesis is the key point for this review.",
+      "Elisa confirmation is the next step for candidate set."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Presentation",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D04-S02",
+    "week": 1,
+    "day": 4,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 the current hypothesis을 뒷받침합니다.",
+    "english": "The current data support the current hypothesis.",
+    "chunk": "The current data / support / the current hypothesis.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support the current hypothesis.",
+      "The current FACS data support the current hypothesis."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Vendor",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D04-S03",
+    "week": 1,
+    "day": 4,
+    "sentence_number": 3,
+    "korean": "추가 확인에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for additional confirmation.",
+    "chunk": "We need / orthogonal confirmation / for additional confirmation.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for additional confirmation.",
+      "We need FACS confirmation for additional confirmation."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Data Interpretation",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D04-S04",
+    "week": 1,
+    "day": 4,
+    "sentence_number": 4,
+    "korean": "candidate set에서는 single-assay bias가 주요 리스크입니다.",
+    "english": "Single-assay bias remains the main risk for candidate set.",
+    "chunk": "Single-assay bias remains / the main risk / for candidate set.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Single-assay bias remains the key concern.",
+      "Single-assay bias remains relevant for prioritization."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Email",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D04-S05",
+    "week": 1,
+    "day": 4,
+    "sentence_number": 5,
+    "korean": "다음 단계로 ELISA confirmation을 우선하겠습니다.",
+    "english": "We should prioritize ELISA confirmation in the next step.",
+    "chunk": "We should prioritize / ELISA confirmation / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize ELISA confirmation before nomination.",
+      "We should prioritize ELISA confirmation for risk reduction."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Meeting",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D05-S01",
+    "week": 1,
+    "day": 5,
+    "sentence_number": 1,
+    "korean": "developability review에서는 preliminary signal가 핵심 지표입니다.",
+    "english": "Preliminary signal is the key readout for developability review.",
+    "chunk": "Preliminary signal is / the key readout / for developability review.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Further evaluation is the key point for this review.",
+      "Risk summary is the next step for developability review."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Vendor",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D05-S02",
+    "week": 1,
+    "day": 5,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 further evaluation을 뒷받침합니다.",
+    "english": "The current data support further evaluation.",
+    "chunk": "The current data / support / further evaluation.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support further evaluation.",
+      "The current FACS data support further evaluation."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Data Interpretation",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D05-S03",
+    "week": 1,
+    "day": 5,
+    "sentence_number": 3,
+    "korean": "조심스러운 결론에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for cautious conclusion.",
+    "chunk": "We need / orthogonal confirmation / for cautious conclusion.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for cautious conclusion.",
+      "We need FACS confirmation for cautious conclusion."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Email",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D05-S04",
+    "week": 1,
+    "day": 5,
+    "sentence_number": 4,
+    "korean": "developability review에서는 overinterpretation가 주요 리스크입니다.",
+    "english": "Overinterpretation remains the main risk for developability review.",
+    "chunk": "Overinterpretation remains / the main risk / for developability review.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Overinterpretation remains the key concern.",
+      "Overinterpretation remains relevant for prioritization."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Meeting",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D05-S05",
+    "week": 1,
+    "day": 5,
+    "sentence_number": 5,
+    "korean": "다음 단계로 risk summary을 우선하겠습니다.",
+    "english": "We should prioritize risk summary in the next step.",
+    "chunk": "We should prioritize / risk summary / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize risk summary before nomination.",
+      "We should prioritize risk summary for risk reduction."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Report",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D06-S01",
+    "week": 1,
+    "day": 6,
+    "sentence_number": 1,
+    "korean": "TCE workflow에서는 decision signal가 핵심 지표입니다.",
+    "english": "Decision signal is the key readout for TCE workflow.",
+    "chunk": "Decision signal is / the key readout / for TCE workflow.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Team alignment is the key point for this review.",
+      "Next assay is the next step for TCE workflow."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Data Interpretation",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D06-S02",
+    "week": 1,
+    "day": 6,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 team alignment을 뒷받침합니다.",
+    "english": "The current data support team alignment.",
+    "chunk": "The current data / support / team alignment.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support team alignment.",
+      "The current FACS data support team alignment."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Email",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D06-S03",
+    "week": 1,
+    "day": 6,
+    "sentence_number": 3,
+    "korean": "내부 업데이트에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for internal update.",
+    "chunk": "We need / orthogonal confirmation / for internal update.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for internal update.",
+      "We need FACS confirmation for internal update."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Meeting",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D06-S04",
+    "week": 1,
+    "day": 6,
+    "sentence_number": 4,
+    "korean": "TCE workflow에서는 missing data가 주요 리스크입니다.",
+    "english": "Missing data remains the main risk for TCE workflow.",
+    "chunk": "Missing data remains / the main risk / for TCE workflow.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Missing data remains the key concern.",
+      "Missing data remains relevant for prioritization."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Report",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D06-S05",
+    "week": 1,
+    "day": 6,
+    "sentence_number": 5,
+    "korean": "다음 단계로 next assay을 우선하겠습니다.",
+    "english": "We should prioritize next assay in the next step.",
+    "chunk": "We should prioritize / next assay / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize next assay before nomination.",
+      "We should prioritize next assay for risk reduction."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Presentation",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D07-S01",
+    "week": 1,
+    "day": 7,
+    "sentence_number": 1,
+    "korean": "R&D workstream에서는 risk reduction가 핵심 지표입니다.",
+    "english": "Risk reduction is the key readout for R&D workstream.",
+    "chunk": "Risk reduction is / the key readout / for R&D workstream.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Follow-up testing is the key point for this review.",
+      "Assay scheduling is the next step for R&D workstream."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Email",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D07-S02",
+    "week": 1,
+    "day": 7,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 follow-up testing을 뒷받침합니다.",
+    "english": "The current data support follow-up testing.",
+    "chunk": "The current data / support / follow-up testing.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support follow-up testing.",
+      "The current FACS data support follow-up testing."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Meeting",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D07-S03",
+    "week": 1,
+    "day": 7,
+    "sentence_number": 3,
+    "korean": "다음 실험에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for next experiment.",
+    "chunk": "We need / orthogonal confirmation / for next experiment.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for next experiment.",
+      "We need FACS confirmation for next experiment."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Report",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D07-S04",
+    "week": 1,
+    "day": 7,
+    "sentence_number": 4,
+    "korean": "R&D workstream에서는 timeline pressure가 주요 리스크입니다.",
+    "english": "Timeline pressure remains the main risk for R&D workstream.",
+    "chunk": "Timeline pressure remains / the main risk / for R&D workstream.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Timeline pressure remains the key concern.",
+      "Timeline pressure remains relevant for prioritization."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Presentation",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W01-D07-S05",
+    "week": 1,
+    "day": 7,
+    "sentence_number": 5,
+    "korean": "다음 단계로 assay scheduling을 우선하겠습니다.",
+    "english": "We should prioritize assay scheduling in the next step.",
+    "chunk": "We should prioritize / assay scheduling / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize assay scheduling before nomination.",
+      "We should prioritize assay scheduling for risk reduction."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Vendor",
+    "category": "Core R&D Communication"
+  },
+  {
+    "id": "W02-D01-S01",
+    "week": 2,
+    "day": 1,
+    "sentence_number": 1,
+    "korean": "ELISA assay에서는 signal window가 핵심 지표입니다.",
+    "english": "Signal window is the key readout for ELISA assay.",
+    "chunk": "Signal window is / the key readout / for ELISA assay.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "The assay setup is the key point for this review.",
+      "Buffer check is the next step for ELISA assay."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Email",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D01-S02",
+    "week": 2,
+    "day": 1,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 the assay setup을 뒷받침합니다.",
+    "english": "The current data support the assay setup.",
+    "chunk": "The current data / support / the assay setup.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support the assay setup.",
+      "The current FACS data support the assay setup."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Meeting",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D01-S03",
+    "week": 2,
+    "day": 1,
+    "sentence_number": 3,
+    "korean": "assay 조건에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for assay condition.",
+    "chunk": "We need / orthogonal confirmation / for assay condition.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for assay condition.",
+      "We need FACS confirmation for assay condition."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Report",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D01-S04",
+    "week": 2,
+    "day": 1,
+    "sentence_number": 4,
+    "korean": "ELISA assay에서는 weak controls가 주요 리스크입니다.",
+    "english": "Weak controls remains the main risk for ELISA assay.",
+    "chunk": "Weak controls remains / the main risk / for ELISA assay.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Weak controls remains the key concern.",
+      "Weak controls remains relevant for prioritization."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Presentation",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D01-S05",
+    "week": 2,
+    "day": 1,
+    "sentence_number": 5,
+    "korean": "다음 단계로 buffer check을 우선하겠습니다.",
+    "english": "We should prioritize buffer check in the next step.",
+    "chunk": "We should prioritize / buffer check / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize buffer check before nomination.",
+      "We should prioritize buffer check for risk reduction."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Vendor",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D02-S01",
+    "week": 2,
+    "day": 2,
+    "sentence_number": 1,
+    "korean": "FACS assay에서는 control separation가 핵심 지표입니다.",
+    "english": "Control separation is the key readout for FACS assay.",
+    "chunk": "Control separation is / the key readout / for FACS assay.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "The gating strategy is the key point for this review.",
+      "Control review is the next step for FACS assay."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Meeting",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D02-S02",
+    "week": 2,
+    "day": 2,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 the gating strategy을 뒷받침합니다.",
+    "english": "The current data support the gating strategy.",
+    "chunk": "The current data / support / the gating strategy.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support the gating strategy.",
+      "The current FACS data support the gating strategy."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Report",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D02-S03",
+    "week": 2,
+    "day": 2,
+    "sentence_number": 3,
+    "korean": "control 설정에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for control design.",
+    "chunk": "We need / orthogonal confirmation / for control design.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for control design.",
+      "We need FACS confirmation for control design."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Presentation",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D02-S04",
+    "week": 2,
+    "day": 2,
+    "sentence_number": 4,
+    "korean": "FACS assay에서는 control drift가 주요 리스크입니다.",
+    "english": "Control drift remains the main risk for FACS assay.",
+    "chunk": "Control drift remains / the main risk / for FACS assay.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Control drift remains the key concern.",
+      "Control drift remains relevant for prioritization."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Vendor",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D02-S05",
+    "week": 2,
+    "day": 2,
+    "sentence_number": 5,
+    "korean": "다음 단계로 control review을 우선하겠습니다.",
+    "english": "We should prioritize control review in the next step.",
+    "chunk": "We should prioritize / control review / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize control review before nomination.",
+      "We should prioritize control review for risk reduction."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Data Interpretation",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D03-S01",
+    "week": 2,
+    "day": 3,
+    "sentence_number": 1,
+    "korean": "ranking assay에서는 matched doses가 핵심 지표입니다.",
+    "english": "Matched doses is the key readout for ranking assay.",
+    "chunk": "Matched doses is / the key readout / for ranking assay.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Fair comparison is the key point for this review.",
+      "Dose alignment is the next step for ranking assay."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Report",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D03-S02",
+    "week": 2,
+    "day": 3,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 fair comparison을 뒷받침합니다.",
+    "english": "The current data support fair comparison.",
+    "chunk": "The current data / support / fair comparison.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support fair comparison.",
+      "The current FACS data support fair comparison."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Presentation",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D03-S03",
+    "week": 2,
+    "day": 3,
+    "sentence_number": 3,
+    "korean": "비교 조건에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for comparison condition.",
+    "chunk": "We need / orthogonal confirmation / for comparison condition.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for comparison condition.",
+      "We need FACS confirmation for comparison condition."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Vendor",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D03-S04",
+    "week": 2,
+    "day": 3,
+    "sentence_number": 4,
+    "korean": "ranking assay에서는 dose mismatch가 주요 리스크입니다.",
+    "english": "Dose mismatch remains the main risk for ranking assay.",
+    "chunk": "Dose mismatch remains / the main risk / for ranking assay.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Dose mismatch remains the key concern.",
+      "Dose mismatch remains relevant for prioritization."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Data Interpretation",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D03-S05",
+    "week": 2,
+    "day": 3,
+    "sentence_number": 5,
+    "korean": "다음 단계로 dose alignment을 우선하겠습니다.",
+    "english": "We should prioritize dose alignment in the next step.",
+    "chunk": "We should prioritize / dose alignment / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize dose alignment before nomination.",
+      "We should prioritize dose alignment for risk reduction."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Email",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D04-S01",
+    "week": 2,
+    "day": 4,
+    "sentence_number": 1,
+    "korean": "pH assay에서는 pH selectivity가 핵심 지표입니다.",
+    "english": "Ph selectivity is the key readout for pH assay.",
+    "chunk": "Ph selectivity is / the key readout / for pH assay.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Conditional binding is the key point for this review.",
+      "Ph retest is the next step for pH assay."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Presentation",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D04-S02",
+    "week": 2,
+    "day": 4,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 conditional binding을 뒷받침합니다.",
+    "english": "The current data support conditional binding.",
+    "chunk": "The current data / support / conditional binding.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support conditional binding.",
+      "The current FACS data support conditional binding."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Vendor",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D04-S03",
+    "week": 2,
+    "day": 4,
+    "sentence_number": 3,
+    "korean": "buffer와 pH에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for buffer pH.",
+    "chunk": "We need / orthogonal confirmation / for buffer pH.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for buffer pH.",
+      "We need FACS confirmation for buffer pH."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Data Interpretation",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D04-S04",
+    "week": 2,
+    "day": 4,
+    "sentence_number": 4,
+    "korean": "pH assay에서는 buffer effect가 주요 리스크입니다.",
+    "english": "Buffer effect remains the main risk for pH assay.",
+    "chunk": "Buffer effect remains / the main risk / for pH assay.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Buffer effect remains the key concern.",
+      "Buffer effect remains relevant for prioritization."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Email",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D04-S05",
+    "week": 2,
+    "day": 4,
+    "sentence_number": 5,
+    "korean": "다음 단계로 pH retest을 우선하겠습니다.",
+    "english": "We should prioritize pH retest in the next step.",
+    "chunk": "We should prioritize / pH retest / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize pH retest before nomination.",
+      "We should prioritize pH retest for risk reduction."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Meeting",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D05-S01",
+    "week": 2,
+    "day": 5,
+    "sentence_number": 1,
+    "korean": "dose response에서는 EC50 estimate가 핵심 지표입니다.",
+    "english": "Ec50 estimate is the key readout for dose response.",
+    "chunk": "Ec50 estimate is / the key readout / for dose response.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Potency ranking is the key point for this review.",
+      "Range expansion is the next step for dose response."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Vendor",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D05-S02",
+    "week": 2,
+    "day": 5,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 potency ranking을 뒷받침합니다.",
+    "english": "The current data support potency ranking.",
+    "chunk": "The current data / support / potency ranking.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support potency ranking.",
+      "The current FACS data support potency ranking."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Data Interpretation",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D05-S03",
+    "week": 2,
+    "day": 5,
+    "sentence_number": 3,
+    "korean": "농도 조건에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for concentration range.",
+    "chunk": "We need / orthogonal confirmation / for concentration range.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for concentration range.",
+      "We need FACS confirmation for concentration range."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Email",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D05-S04",
+    "week": 2,
+    "day": 5,
+    "sentence_number": 4,
+    "korean": "dose response에서는 narrow range가 주요 리스크입니다.",
+    "english": "Narrow range remains the main risk for dose response.",
+    "chunk": "Narrow range remains / the main risk / for dose response.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Narrow range remains the key concern.",
+      "Narrow range remains relevant for prioritization."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Meeting",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D05-S05",
+    "week": 2,
+    "day": 5,
+    "sentence_number": 5,
+    "korean": "다음 단계로 range expansion을 우선하겠습니다.",
+    "english": "We should prioritize range expansion in the next step.",
+    "chunk": "We should prioritize / range expansion / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize range expansion before nomination.",
+      "We should prioritize range expansion for risk reduction."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Report",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D06-S01",
+    "week": 2,
+    "day": 6,
+    "sentence_number": 1,
+    "korean": "binding assay에서는 contact time가 핵심 지표입니다.",
+    "english": "Contact time is the key readout for binding assay.",
+    "chunk": "Contact time is / the key readout / for binding assay.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Stable signal is the key point for this review.",
+      "Time-course test is the next step for binding assay."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Data Interpretation",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D06-S02",
+    "week": 2,
+    "day": 6,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 stable signal을 뒷받침합니다.",
+    "english": "The current data support stable signal.",
+    "chunk": "The current data / support / stable signal.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support stable signal.",
+      "The current FACS data support stable signal."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Email",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D06-S03",
+    "week": 2,
+    "day": 6,
+    "sentence_number": 3,
+    "korean": "incubation 조건에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for incubation condition.",
+    "chunk": "We need / orthogonal confirmation / for incubation condition.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for incubation condition.",
+      "We need FACS confirmation for incubation condition."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Meeting",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D06-S04",
+    "week": 2,
+    "day": 6,
+    "sentence_number": 4,
+    "korean": "binding assay에서는 time dependence가 주요 리스크입니다.",
+    "english": "Time dependence remains the main risk for binding assay.",
+    "chunk": "Time dependence remains / the main risk / for binding assay.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Time dependence remains the key concern.",
+      "Time dependence remains relevant for prioritization."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Report",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D06-S05",
+    "week": 2,
+    "day": 6,
+    "sentence_number": 5,
+    "korean": "다음 단계로 time-course test을 우선하겠습니다.",
+    "english": "We should prioritize time-course test in the next step.",
+    "chunk": "We should prioritize / time-course test / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize time-course test before nomination.",
+      "We should prioritize time-course test for risk reduction."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Presentation",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D07-S01",
+    "week": 2,
+    "day": 7,
+    "sentence_number": 1,
+    "korean": "screening assay에서는 assay window가 핵심 지표입니다.",
+    "english": "Assay window is the key readout for screening assay.",
+    "chunk": "Assay window is / the key readout / for screening assay.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Reliable screening is the key point for this review.",
+      "Condition optimization is the next step for screening assay."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Email",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D07-S02",
+    "week": 2,
+    "day": 7,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 reliable screening을 뒷받침합니다.",
+    "english": "The current data support reliable screening.",
+    "chunk": "The current data / support / reliable screening.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support reliable screening.",
+      "The current FACS data support reliable screening."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Meeting",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D07-S03",
+    "week": 2,
+    "day": 7,
+    "sentence_number": 3,
+    "korean": "재시험 최적화에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for assay optimization.",
+    "chunk": "We need / orthogonal confirmation / for assay optimization.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for assay optimization.",
+      "We need FACS confirmation for assay optimization."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Report",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D07-S04",
+    "week": 2,
+    "day": 7,
+    "sentence_number": 4,
+    "korean": "screening assay에서는 low robustness가 주요 리스크입니다.",
+    "english": "Low robustness remains the main risk for screening assay.",
+    "chunk": "Low robustness remains / the main risk / for screening assay.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Low robustness remains the key concern.",
+      "Low robustness remains relevant for prioritization."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Presentation",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W02-D07-S05",
+    "week": 2,
+    "day": 7,
+    "sentence_number": 5,
+    "korean": "다음 단계로 condition optimization을 우선하겠습니다.",
+    "english": "We should prioritize condition optimization in the next step.",
+    "chunk": "We should prioritize / condition optimization / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize condition optimization before nomination.",
+      "We should prioritize condition optimization for risk reduction."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Vendor",
+    "category": "Experimental Design and Assay Conditions"
+  },
+  {
+    "id": "W03-D01-S01",
+    "week": 3,
+    "day": 1,
+    "sentence_number": 1,
+    "korean": "clone screen에서는 response trend가 핵심 지표입니다.",
+    "english": "Response trend is the key readout for clone screen.",
+    "chunk": "Response trend is / the key readout / for clone screen.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Activity trend is the key point for this review.",
+      "Trend review is the next step for clone screen."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Email",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D01-S02",
+    "week": 3,
+    "day": 1,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 activity trend을 뒷받침합니다.",
+    "english": "The current data support activity trend.",
+    "chunk": "The current data / support / activity trend.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support activity trend.",
+      "The current FACS data support activity trend."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Meeting",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D01-S03",
+    "week": 3,
+    "day": 1,
+    "sentence_number": 3,
+    "korean": "trend 해석에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for trend interpretation.",
+    "chunk": "We need / orthogonal confirmation / for trend interpretation.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for trend interpretation.",
+      "We need FACS confirmation for trend interpretation."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Report",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D01-S04",
+    "week": 3,
+    "day": 1,
+    "sentence_number": 4,
+    "korean": "clone screen에서는 noisy data가 주요 리스크입니다.",
+    "english": "Noisy data remains the main risk for clone screen.",
+    "chunk": "Noisy data remains / the main risk / for clone screen.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Noisy data remains the key concern.",
+      "Noisy data remains relevant for prioritization."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Presentation",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D01-S05",
+    "week": 3,
+    "day": 1,
+    "sentence_number": 5,
+    "korean": "다음 단계로 trend review을 우선하겠습니다.",
+    "english": "We should prioritize trend review in the next step.",
+    "chunk": "We should prioritize / trend review / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize trend review before nomination.",
+      "We should prioritize trend review for risk reduction."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Vendor",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D02-S01",
+    "week": 3,
+    "day": 2,
+    "sentence_number": 1,
+    "korean": "SPR review에서는 binding signal가 핵심 지표입니다.",
+    "english": "Binding signal is the key readout for SPR review.",
+    "chunk": "Binding signal is / the key readout / for SPR review.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Specific binding is the key point for this review.",
+      "Artifact check is the next step for SPR review."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Meeting",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D02-S02",
+    "week": 3,
+    "day": 2,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 specific binding을 뒷받침합니다.",
+    "english": "The current data support specific binding.",
+    "chunk": "The current data / support / specific binding.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support specific binding.",
+      "The current FACS data support specific binding."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Report",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D02-S03",
+    "week": 3,
+    "day": 2,
+    "sentence_number": 3,
+    "korean": "artifact 가능성에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for artifact risk.",
+    "chunk": "We need / orthogonal confirmation / for artifact risk.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for artifact risk.",
+      "We need FACS confirmation for artifact risk."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Presentation",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D02-S04",
+    "week": 3,
+    "day": 2,
+    "sentence_number": 4,
+    "korean": "SPR review에서는 nonspecific binding가 주요 리스크입니다.",
+    "english": "Nonspecific binding remains the main risk for SPR review.",
+    "chunk": "Nonspecific binding remains / the main risk / for SPR review.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Nonspecific binding remains the key concern.",
+      "Nonspecific binding remains relevant for prioritization."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Vendor",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D02-S05",
+    "week": 3,
+    "day": 2,
+    "sentence_number": 5,
+    "korean": "다음 단계로 artifact check을 우선하겠습니다.",
+    "english": "We should prioritize artifact check in the next step.",
+    "chunk": "We should prioritize / artifact check / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize artifact check before nomination.",
+      "We should prioritize artifact check for risk reduction."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Data Interpretation",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D03-S01",
+    "week": 3,
+    "day": 3,
+    "sentence_number": 1,
+    "korean": "repeat assay에서는 run consistency가 핵심 지표입니다.",
+    "english": "Run consistency is the key readout for repeat assay.",
+    "chunk": "Run consistency is / the key readout / for repeat assay.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Reproducible activity is the key point for this review.",
+      "Repeat testing is the next step for repeat assay."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Report",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D03-S02",
+    "week": 3,
+    "day": 3,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 reproducible activity을 뒷받침합니다.",
+    "english": "The current data support reproducible activity.",
+    "chunk": "The current data / support / reproducible activity.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support reproducible activity.",
+      "The current FACS data support reproducible activity."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Presentation",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D03-S03",
+    "week": 3,
+    "day": 3,
+    "sentence_number": 3,
+    "korean": "재현성에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for reproducibility.",
+    "chunk": "We need / orthogonal confirmation / for reproducibility.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for reproducibility.",
+      "We need FACS confirmation for reproducibility."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Vendor",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D03-S04",
+    "week": 3,
+    "day": 3,
+    "sentence_number": 4,
+    "korean": "repeat assay에서는 run variation가 주요 리스크입니다.",
+    "english": "Run variation remains the main risk for repeat assay.",
+    "chunk": "Run variation remains / the main risk / for repeat assay.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Run variation remains the key concern.",
+      "Run variation remains relevant for prioritization."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Data Interpretation",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D03-S05",
+    "week": 3,
+    "day": 3,
+    "sentence_number": 5,
+    "korean": "다음 단계로 repeat testing을 우선하겠습니다.",
+    "english": "We should prioritize repeat testing in the next step.",
+    "chunk": "We should prioritize / repeat testing / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize repeat testing before nomination.",
+      "We should prioritize repeat testing for risk reduction."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Email",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D04-S01",
+    "week": 3,
+    "day": 4,
+    "sentence_number": 1,
+    "korean": "FACS ELISA에서는 readout alignment가 핵심 지표입니다.",
+    "english": "Readout alignment is the key readout for FACS ELISA.",
+    "chunk": "Readout alignment is / the key readout / for FACS ELISA.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Independent support is the key point for this review.",
+      "Orthogonal assay is the next step for FACS ELISA."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Presentation",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D04-S02",
+    "week": 3,
+    "day": 4,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 independent support을 뒷받침합니다.",
+    "english": "The current data support independent support.",
+    "chunk": "The current data / support / independent support.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support independent support.",
+      "The current FACS data support independent support."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Vendor",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D04-S03",
+    "week": 3,
+    "day": 4,
+    "sentence_number": 3,
+    "korean": "orthogonal 확인에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for orthogonal check.",
+    "chunk": "We need / orthogonal confirmation / for orthogonal check.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for orthogonal check.",
+      "We need FACS confirmation for orthogonal check."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Data Interpretation",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D04-S04",
+    "week": 3,
+    "day": 4,
+    "sentence_number": 4,
+    "korean": "FACS ELISA에서는 assay discordance가 주요 리스크입니다.",
+    "english": "Assay discordance remains the main risk for FACS ELISA.",
+    "chunk": "Assay discordance remains / the main risk / for FACS ELISA.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Assay discordance remains the key concern.",
+      "Assay discordance remains relevant for prioritization."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Email",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D04-S05",
+    "week": 3,
+    "day": 4,
+    "sentence_number": 5,
+    "korean": "다음 단계로 orthogonal assay을 우선하겠습니다.",
+    "english": "We should prioritize orthogonal assay in the next step.",
+    "chunk": "We should prioritize / orthogonal assay / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize orthogonal assay before nomination.",
+      "We should prioritize orthogonal assay for risk reduction."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Meeting",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D05-S01",
+    "week": 3,
+    "day": 5,
+    "sentence_number": 1,
+    "korean": "activation data에서는 mechanistic support가 핵심 지표입니다.",
+    "english": "Mechanistic support is the key readout for activation data.",
+    "chunk": "Mechanistic support is / the key readout / for activation data.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "A working hypothesis is the key point for this review.",
+      "Mechanism study is the next step for activation data."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Vendor",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D05-S02",
+    "week": 3,
+    "day": 5,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 a working hypothesis을 뒷받침합니다.",
+    "english": "The current data support a working hypothesis.",
+    "chunk": "The current data / support / a working hypothesis.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support a working hypothesis.",
+      "The current FACS data support a working hypothesis."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Data Interpretation",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D05-S03",
+    "week": 3,
+    "day": 5,
+    "sentence_number": 3,
+    "korean": "mechanism 표현에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for mechanism claim.",
+    "chunk": "We need / orthogonal confirmation / for mechanism claim.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for mechanism claim.",
+      "We need FACS confirmation for mechanism claim."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Email",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D05-S04",
+    "week": 3,
+    "day": 5,
+    "sentence_number": 4,
+    "korean": "activation data에서는 overclaiming가 주요 리스크입니다.",
+    "english": "Overclaiming remains the main risk for activation data.",
+    "chunk": "Overclaiming remains / the main risk / for activation data.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Overclaiming remains the key concern.",
+      "Overclaiming remains relevant for prioritization."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Meeting",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D05-S05",
+    "week": 3,
+    "day": 5,
+    "sentence_number": 5,
+    "korean": "다음 단계로 mechanism study을 우선하겠습니다.",
+    "english": "We should prioritize mechanism study in the next step.",
+    "chunk": "We should prioritize / mechanism study / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize mechanism study before nomination.",
+      "We should prioritize mechanism study for risk reduction."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Report",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D06-S01",
+    "week": 3,
+    "day": 6,
+    "sentence_number": 1,
+    "korean": "screening data에서는 clone deviation가 핵심 지표입니다.",
+    "english": "Clone deviation is the key readout for screening data.",
+    "chunk": "Clone deviation is / the key readout / for screening data.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Outlier handling is the key point for this review.",
+      "Outlier retest is the next step for screening data."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Data Interpretation",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D06-S02",
+    "week": 3,
+    "day": 6,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 outlier handling을 뒷받침합니다.",
+    "english": "The current data support outlier handling.",
+    "chunk": "The current data / support / outlier handling.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support outlier handling.",
+      "The current FACS data support outlier handling."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Email",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D06-S03",
+    "week": 3,
+    "day": 6,
+    "sentence_number": 3,
+    "korean": "outlier 설명에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for outlier review.",
+    "chunk": "We need / orthogonal confirmation / for outlier review.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for outlier review.",
+      "We need FACS confirmation for outlier review."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Meeting",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D06-S04",
+    "week": 3,
+    "day": 6,
+    "sentence_number": 4,
+    "korean": "screening data에서는 single-point noise가 주요 리스크입니다.",
+    "english": "Single-point noise remains the main risk for screening data.",
+    "chunk": "Single-point noise remains / the main risk / for screening data.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Single-point noise remains the key concern.",
+      "Single-point noise remains relevant for prioritization."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Report",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D06-S05",
+    "week": 3,
+    "day": 6,
+    "sentence_number": 5,
+    "korean": "다음 단계로 outlier retest을 우선하겠습니다.",
+    "english": "We should prioritize outlier retest in the next step.",
+    "chunk": "We should prioritize / outlier retest / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize outlier retest before nomination.",
+      "We should prioritize outlier retest for risk reduction."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Presentation",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D07-S01",
+    "week": 3,
+    "day": 7,
+    "sentence_number": 1,
+    "korean": "candidate package에서는 evidence weight가 핵심 지표입니다.",
+    "english": "Evidence weight is the key readout for candidate package.",
+    "chunk": "Evidence weight is / the key readout / for candidate package.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Risk ranking is the key point for this review.",
+      "Risk update is the next step for candidate package."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Email",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D07-S02",
+    "week": 3,
+    "day": 7,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 risk ranking을 뒷받침합니다.",
+    "english": "The current data support risk ranking.",
+    "chunk": "The current data / support / risk ranking.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support risk ranking.",
+      "The current FACS data support risk ranking."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Meeting",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D07-S03",
+    "week": 3,
+    "day": 7,
+    "sentence_number": 3,
+    "korean": "리스크 정리에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for risk summary.",
+    "chunk": "We need / orthogonal confirmation / for risk summary.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for risk summary.",
+      "We need FACS confirmation for risk summary."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Report",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D07-S04",
+    "week": 3,
+    "day": 7,
+    "sentence_number": 4,
+    "korean": "candidate package에서는 unclear causality가 주요 리스크입니다.",
+    "english": "Unclear causality remains the main risk for candidate package.",
+    "chunk": "Unclear causality remains / the main risk / for candidate package.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Unclear causality remains the key concern.",
+      "Unclear causality remains relevant for prioritization."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Presentation",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W03-D07-S05",
+    "week": 3,
+    "day": 7,
+    "sentence_number": 5,
+    "korean": "다음 단계로 risk update을 우선하겠습니다.",
+    "english": "We should prioritize risk update in the next step.",
+    "chunk": "We should prioritize / risk update / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize risk update before nomination.",
+      "We should prioritize risk update for risk reduction."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Vendor",
+    "category": "Data Interpretation"
+  },
+  {
+    "id": "W04-D01-S01",
+    "week": 4,
+    "day": 1,
+    "sentence_number": 1,
+    "korean": "discovery campaign에서는 hit quality가 핵심 지표입니다.",
+    "english": "Hit quality is the key readout for discovery campaign.",
+    "chunk": "Hit quality is / the key readout / for discovery campaign.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Hit nomination is the key point for this review.",
+      "Hit triage is the next step for discovery campaign."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Email",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D01-S02",
+    "week": 4,
+    "day": 1,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 hit nomination을 뒷받침합니다.",
+    "english": "The current data support hit nomination.",
+    "chunk": "The current data / support / hit nomination.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support hit nomination.",
+      "The current FACS data support hit nomination."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Meeting",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D01-S03",
+    "week": 4,
+    "day": 1,
+    "sentence_number": 3,
+    "korean": "hit 선정에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for hit selection.",
+    "chunk": "We need / orthogonal confirmation / for hit selection.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for hit selection.",
+      "We need FACS confirmation for hit selection."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Report",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D01-S04",
+    "week": 4,
+    "day": 1,
+    "sentence_number": 4,
+    "korean": "discovery campaign에서는 weak specificity가 주요 리스크입니다.",
+    "english": "Weak specificity remains the main risk for discovery campaign.",
+    "chunk": "Weak specificity remains / the main risk / for discovery campaign.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Weak specificity remains the key concern.",
+      "Weak specificity remains relevant for prioritization."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Presentation",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D01-S05",
+    "week": 4,
+    "day": 1,
+    "sentence_number": 5,
+    "korean": "다음 단계로 hit triage을 우선하겠습니다.",
+    "english": "We should prioritize hit triage in the next step.",
+    "chunk": "We should prioritize / hit triage / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize hit triage before nomination.",
+      "We should prioritize hit triage for risk reduction."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Vendor",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D02-S01",
+    "week": 4,
+    "day": 2,
+    "sentence_number": 1,
+    "korean": "screening funnel에서는 clone order가 핵심 지표입니다.",
+    "english": "Clone order is the key readout for screening funnel.",
+    "chunk": "Clone order is / the key readout / for screening funnel.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Priority ranking is the key point for this review.",
+      "Ranking review is the next step for screening funnel."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Meeting",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D02-S02",
+    "week": 4,
+    "day": 2,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 priority ranking을 뒷받침합니다.",
+    "english": "The current data support priority ranking.",
+    "chunk": "The current data / support / priority ranking.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support priority ranking.",
+      "The current FACS data support priority ranking."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Report",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D02-S03",
+    "week": 4,
+    "day": 2,
+    "sentence_number": 3,
+    "korean": "clone ranking에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for clone ranking.",
+    "chunk": "We need / orthogonal confirmation / for clone ranking.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for clone ranking.",
+      "We need FACS confirmation for clone ranking."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Presentation",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D02-S04",
+    "week": 4,
+    "day": 2,
+    "sentence_number": 4,
+    "korean": "screening funnel에서는 rank instability가 주요 리스크입니다.",
+    "english": "Rank instability remains the main risk for screening funnel.",
+    "chunk": "Rank instability remains / the main risk / for screening funnel.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Rank instability remains the key concern.",
+      "Rank instability remains relevant for prioritization."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Vendor",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D02-S05",
+    "week": 4,
+    "day": 2,
+    "sentence_number": 5,
+    "korean": "다음 단계로 ranking review을 우선하겠습니다.",
+    "english": "We should prioritize ranking review in the next step.",
+    "chunk": "We should prioritize / ranking review / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize ranking review before nomination.",
+      "We should prioritize ranking review for risk reduction."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Data Interpretation",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D03-S01",
+    "week": 4,
+    "day": 3,
+    "sentence_number": 1,
+    "korean": "antibody panel에서는 target specificity가 핵심 지표입니다.",
+    "english": "Target specificity is the key readout for antibody panel.",
+    "chunk": "Target specificity is / the key readout / for antibody panel.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Specific binding is the key point for this review.",
+      "Specificity screen is the next step for antibody panel."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Report",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D03-S02",
+    "week": 4,
+    "day": 3,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 specific binding을 뒷받침합니다.",
+    "english": "The current data support specific binding.",
+    "chunk": "The current data / support / specific binding.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support specific binding.",
+      "The current FACS data support specific binding."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Presentation",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D03-S03",
+    "week": 4,
+    "day": 3,
+    "sentence_number": 3,
+    "korean": "specificity에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for specificity assessment.",
+    "chunk": "We need / orthogonal confirmation / for specificity assessment.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for specificity assessment.",
+      "We need FACS confirmation for specificity assessment."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Vendor",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D03-S04",
+    "week": 4,
+    "day": 3,
+    "sentence_number": 4,
+    "korean": "antibody panel에서는 off-target binding가 주요 리스크입니다.",
+    "english": "Off-target binding remains the main risk for antibody panel.",
+    "chunk": "Off-target binding remains / the main risk / for antibody panel.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Off-target binding remains the key concern.",
+      "Off-target binding remains relevant for prioritization."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Data Interpretation",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D03-S05",
+    "week": 4,
+    "day": 3,
+    "sentence_number": 5,
+    "korean": "다음 단계로 specificity screen을 우선하겠습니다.",
+    "english": "We should prioritize specificity screen in the next step.",
+    "chunk": "We should prioritize / specificity screen / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize specificity screen before nomination.",
+      "We should prioritize specificity screen for risk reduction."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Email",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D04-S01",
+    "week": 4,
+    "day": 4,
+    "sentence_number": 1,
+    "korean": "species panel에서는 cyno binding가 핵심 지표입니다.",
+    "english": "Cyno binding is the key readout for species panel.",
+    "chunk": "Cyno binding is / the key readout / for species panel.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Species coverage is the key point for this review.",
+      "Cyno confirmation is the next step for species panel."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Presentation",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D04-S02",
+    "week": 4,
+    "day": 4,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 species coverage을 뒷받침합니다.",
+    "english": "The current data support species coverage.",
+    "chunk": "The current data / support / species coverage.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support species coverage.",
+      "The current FACS data support species coverage."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Vendor",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D04-S03",
+    "week": 4,
+    "day": 4,
+    "sentence_number": 3,
+    "korean": "cross-reactivity에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for cross-reactivity.",
+    "chunk": "We need / orthogonal confirmation / for cross-reactivity.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for cross-reactivity.",
+      "We need FACS confirmation for cross-reactivity."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Data Interpretation",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D04-S04",
+    "week": 4,
+    "day": 4,
+    "sentence_number": 4,
+    "korean": "species panel에서는 species gap가 주요 리스크입니다.",
+    "english": "Species gap remains the main risk for species panel.",
+    "chunk": "Species gap remains / the main risk / for species panel.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Species gap remains the key concern.",
+      "Species gap remains relevant for prioritization."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Email",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D04-S05",
+    "week": 4,
+    "day": 4,
+    "sentence_number": 5,
+    "korean": "다음 단계로 cyno confirmation을 우선하겠습니다.",
+    "english": "We should prioritize cyno confirmation in the next step.",
+    "chunk": "We should prioritize / cyno confirmation / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize cyno confirmation before nomination.",
+      "We should prioritize cyno confirmation for risk reduction."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Meeting",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D05-S01",
+    "week": 4,
+    "day": 5,
+    "sentence_number": 1,
+    "korean": "lead pool에서는 expression risk가 핵심 지표입니다.",
+    "english": "Expression risk is the key readout for lead pool.",
+    "chunk": "Expression risk is / the key readout / for lead pool.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Lead quality is the key point for this review.",
+      "Developability screen is the next step for lead pool."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Vendor",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D05-S02",
+    "week": 4,
+    "day": 5,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 lead quality을 뒷받침합니다.",
+    "english": "The current data support lead quality.",
+    "chunk": "The current data / support / lead quality.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support lead quality.",
+      "The current FACS data support lead quality."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Data Interpretation",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D05-S03",
+    "week": 4,
+    "day": 5,
+    "sentence_number": 3,
+    "korean": "developability에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for developability check.",
+    "chunk": "We need / orthogonal confirmation / for developability check.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for developability check.",
+      "We need FACS confirmation for developability check."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Email",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D05-S04",
+    "week": 4,
+    "day": 5,
+    "sentence_number": 4,
+    "korean": "lead pool에서는 aggregation risk가 주요 리스크입니다.",
+    "english": "Aggregation risk remains the main risk for lead pool.",
+    "chunk": "Aggregation risk remains / the main risk / for lead pool.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Aggregation risk remains the key concern.",
+      "Aggregation risk remains relevant for prioritization."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Meeting",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D05-S05",
+    "week": 4,
+    "day": 5,
+    "sentence_number": 5,
+    "korean": "다음 단계로 developability screen을 우선하겠습니다.",
+    "english": "We should prioritize developability screen in the next step.",
+    "chunk": "We should prioritize / developability screen / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize developability screen before nomination.",
+      "We should prioritize developability screen for risk reduction."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Report",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D06-S01",
+    "week": 4,
+    "day": 6,
+    "sentence_number": 1,
+    "korean": "sequence workflow에서는 sequence identity가 핵심 지표입니다.",
+    "english": "Sequence identity is the key readout for sequence workflow.",
+    "chunk": "Sequence identity is / the key readout / for sequence workflow.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Clone diversity is the key point for this review.",
+      "Sanger check is the next step for sequence workflow."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Data Interpretation",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D06-S02",
+    "week": 4,
+    "day": 6,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 clone diversity을 뒷받침합니다.",
+    "english": "The current data support clone diversity.",
+    "chunk": "The current data / support / clone diversity.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support clone diversity.",
+      "The current FACS data support clone diversity."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Email",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D06-S03",
+    "week": 4,
+    "day": 6,
+    "sentence_number": 3,
+    "korean": "NGS/Sanger에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for sequence check.",
+    "chunk": "We need / orthogonal confirmation / for sequence check.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for sequence check.",
+      "We need FACS confirmation for sequence check."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Meeting",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D06-S04",
+    "week": 4,
+    "day": 6,
+    "sentence_number": 4,
+    "korean": "sequence workflow에서는 sequence mismatch가 주요 리스크입니다.",
+    "english": "Sequence mismatch remains the main risk for sequence workflow.",
+    "chunk": "Sequence mismatch remains / the main risk / for sequence workflow.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Sequence mismatch remains the key concern.",
+      "Sequence mismatch remains relevant for prioritization."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Report",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D06-S05",
+    "week": 4,
+    "day": 6,
+    "sentence_number": 5,
+    "korean": "다음 단계로 Sanger check을 우선하겠습니다.",
+    "english": "We should prioritize Sanger check in the next step.",
+    "chunk": "We should prioritize / Sanger check / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize Sanger check before nomination.",
+      "We should prioritize Sanger check for risk reduction."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Presentation",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D07-S01",
+    "week": 4,
+    "day": 7,
+    "sentence_number": 1,
+    "korean": "candidate set에서는 format readiness가 핵심 지표입니다.",
+    "english": "Format readiness is the key readout for candidate set.",
+    "chunk": "Format readiness is / the key readout / for candidate set.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Reformatting priority is the key point for this review.",
+      "96-clone reformatting is the next step for candidate set."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Email",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D07-S02",
+    "week": 4,
+    "day": 7,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 reformatting priority을 뒷받침합니다.",
+    "english": "The current data support reformatting priority.",
+    "chunk": "The current data / support / reformatting priority.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support reformatting priority.",
+      "The current FACS data support reformatting priority."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Meeting",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D07-S03",
+    "week": 4,
+    "day": 7,
+    "sentence_number": 3,
+    "korean": "reformatting에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for reformatting plan.",
+    "chunk": "We need / orthogonal confirmation / for reformatting plan.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for reformatting plan.",
+      "We need FACS confirmation for reformatting plan."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Report",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D07-S04",
+    "week": 4,
+    "day": 7,
+    "sentence_number": 4,
+    "korean": "candidate set에서는 format risk가 주요 리스크입니다.",
+    "english": "Format risk remains the main risk for candidate set.",
+    "chunk": "Format risk remains / the main risk / for candidate set.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Format risk remains the key concern.",
+      "Format risk remains relevant for prioritization."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Presentation",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W04-D07-S05",
+    "week": 4,
+    "day": 7,
+    "sentence_number": 5,
+    "korean": "다음 단계로 96-clone reformatting을 우선하겠습니다.",
+    "english": "We should prioritize 96-clone reformatting in the next step.",
+    "chunk": "We should prioritize / 96-clone reformatting / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize 96-clone reformatting before nomination.",
+      "We should prioritize 96-clone reformatting for risk reduction."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Vendor",
+    "category": "Antibody Discovery and Screening"
+  },
+  {
+    "id": "W05-D01-S01",
+    "week": 5,
+    "day": 1,
+    "sentence_number": 1,
+    "korean": "SPR study에서는 kon and koff가 핵심 지표입니다.",
+    "english": "Kon and koff is the key readout for SPR study.",
+    "chunk": "Kon and koff is / the key readout / for SPR study.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Kinetic ranking is the key point for this review.",
+      "Kinetics review is the next step for SPR study."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Email",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D01-S02",
+    "week": 5,
+    "day": 1,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 kinetic ranking을 뒷받침합니다.",
+    "english": "The current data support kinetic ranking.",
+    "chunk": "The current data / support / kinetic ranking.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support kinetic ranking.",
+      "The current FACS data support kinetic ranking."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Meeting",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D01-S03",
+    "week": 5,
+    "day": 1,
+    "sentence_number": 3,
+    "korean": "binding kinetics에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for binding kinetics.",
+    "chunk": "We need / orthogonal confirmation / for binding kinetics.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for binding kinetics.",
+      "We need FACS confirmation for binding kinetics."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Report",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D01-S04",
+    "week": 5,
+    "day": 1,
+    "sentence_number": 4,
+    "korean": "SPR study에서는 mass transport가 주요 리스크입니다.",
+    "english": "Mass transport remains the main risk for SPR study.",
+    "chunk": "Mass transport remains / the main risk / for SPR study.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Mass transport remains the key concern.",
+      "Mass transport remains relevant for prioritization."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Presentation",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D01-S05",
+    "week": 5,
+    "day": 1,
+    "sentence_number": 5,
+    "korean": "다음 단계로 kinetics review을 우선하겠습니다.",
+    "english": "We should prioritize kinetics review in the next step.",
+    "chunk": "We should prioritize / kinetics review / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize kinetics review before nomination.",
+      "We should prioritize kinetics review for risk reduction."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Vendor",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D02-S01",
+    "week": 5,
+    "day": 2,
+    "sentence_number": 1,
+    "korean": "affinity assay에서는 KD value가 핵심 지표입니다.",
+    "english": "Kd value is the key readout for affinity assay.",
+    "chunk": "Kd value is / the key readout / for affinity assay.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Affinity ranking is the key point for this review.",
+      "Kd retest is the next step for affinity assay."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Meeting",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D02-S02",
+    "week": 5,
+    "day": 2,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 affinity ranking을 뒷받침합니다.",
+    "english": "The current data support affinity ranking.",
+    "chunk": "The current data / support / affinity ranking.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support affinity ranking.",
+      "The current FACS data support affinity ranking."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Report",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D02-S03",
+    "week": 5,
+    "day": 2,
+    "sentence_number": 3,
+    "korean": "KD 해석에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for KD interpretation.",
+    "chunk": "We need / orthogonal confirmation / for KD interpretation.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for KD interpretation.",
+      "We need FACS confirmation for KD interpretation."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Presentation",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D02-S04",
+    "week": 5,
+    "day": 2,
+    "sentence_number": 4,
+    "korean": "affinity assay에서는 poor fitting가 주요 리스크입니다.",
+    "english": "Poor fitting remains the main risk for affinity assay.",
+    "chunk": "Poor fitting remains / the main risk / for affinity assay.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Poor fitting remains the key concern.",
+      "Poor fitting remains relevant for prioritization."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Vendor",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D02-S05",
+    "week": 5,
+    "day": 2,
+    "sentence_number": 5,
+    "korean": "다음 단계로 KD retest을 우선하겠습니다.",
+    "english": "We should prioritize KD retest in the next step.",
+    "chunk": "We should prioritize / KD retest / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize KD retest before nomination.",
+      "We should prioritize KD retest for risk reduction."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Data Interpretation",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D03-S01",
+    "week": 5,
+    "day": 3,
+    "sentence_number": 1,
+    "korean": "FACS assay에서는 cell binding가 핵심 지표입니다.",
+    "english": "Cell binding is the key readout for FACS assay.",
+    "chunk": "Cell binding is / the key readout / for FACS assay.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Potency estimate is the key point for this review.",
+      "Facs repeat is the next step for FACS assay."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Report",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D03-S02",
+    "week": 5,
+    "day": 3,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 potency estimate을 뒷받침합니다.",
+    "english": "The current data support potency estimate.",
+    "chunk": "The current data / support / potency estimate.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support potency estimate.",
+      "The current FACS data support potency estimate."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Presentation",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D03-S03",
+    "week": 5,
+    "day": 3,
+    "sentence_number": 3,
+    "korean": "EC50와 MFI에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for EC50 MFI.",
+    "chunk": "We need / orthogonal confirmation / for EC50 MFI.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for EC50 MFI.",
+      "We need FACS confirmation for EC50 MFI."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Vendor",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D03-S04",
+    "week": 5,
+    "day": 3,
+    "sentence_number": 4,
+    "korean": "FACS assay에서는 MFI drift가 주요 리스크입니다.",
+    "english": "Mfi drift remains the main risk for FACS assay.",
+    "chunk": "Mfi drift remains / the main risk / for FACS assay.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Mfi drift remains the key concern.",
+      "Mfi drift remains relevant for prioritization."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Data Interpretation",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D03-S05",
+    "week": 5,
+    "day": 3,
+    "sentence_number": 5,
+    "korean": "다음 단계로 FACS repeat을 우선하겠습니다.",
+    "english": "We should prioritize FACS repeat in the next step.",
+    "chunk": "We should prioritize / FACS repeat / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize FACS repeat before nomination.",
+      "We should prioritize FACS repeat for risk reduction."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Email",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D04-S01",
+    "week": 5,
+    "day": 4,
+    "sentence_number": 1,
+    "korean": "SPR format에서는 binding orientation가 핵심 지표입니다.",
+    "english": "Binding orientation is the key readout for SPR format.",
+    "chunk": "Binding orientation is / the key readout / for SPR format.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Format choice is the key point for this review.",
+      "Format comparison is the next step for SPR format."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Presentation",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D04-S02",
+    "week": 5,
+    "day": 4,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 format choice을 뒷받침합니다.",
+    "english": "The current data support format choice.",
+    "chunk": "The current data / support / format choice.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support format choice.",
+      "The current FACS data support format choice."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Vendor",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D04-S03",
+    "week": 5,
+    "day": 4,
+    "sentence_number": 3,
+    "korean": "capture 형식에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for capture format.",
+    "chunk": "We need / orthogonal confirmation / for capture format.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for capture format.",
+      "We need FACS confirmation for capture format."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Data Interpretation",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D04-S04",
+    "week": 5,
+    "day": 4,
+    "sentence_number": 4,
+    "korean": "SPR format에서는 surface artifact가 주요 리스크입니다.",
+    "english": "Surface artifact remains the main risk for SPR format.",
+    "chunk": "Surface artifact remains / the main risk / for SPR format.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Surface artifact remains the key concern.",
+      "Surface artifact remains relevant for prioritization."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Email",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D04-S05",
+    "week": 5,
+    "day": 4,
+    "sentence_number": 5,
+    "korean": "다음 단계로 format comparison을 우선하겠습니다.",
+    "english": "We should prioritize format comparison in the next step.",
+    "chunk": "We should prioritize / format comparison / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize format comparison before nomination.",
+      "We should prioritize format comparison for risk reduction."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Meeting",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D05-S01",
+    "week": 5,
+    "day": 5,
+    "sentence_number": 1,
+    "korean": "sensorgram analysis에서는 fit quality가 핵심 지표입니다.",
+    "english": "Fit quality is the key readout for sensorgram analysis.",
+    "chunk": "Fit quality is / the key readout / for sensorgram analysis.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Model reliability is the key point for this review.",
+      "Model review is the next step for sensorgram analysis."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Vendor",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D05-S02",
+    "week": 5,
+    "day": 5,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 model reliability을 뒷받침합니다.",
+    "english": "The current data support model reliability.",
+    "chunk": "The current data / support / model reliability.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support model reliability.",
+      "The current FACS data support model reliability."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Data Interpretation",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D05-S03",
+    "week": 5,
+    "day": 5,
+    "sentence_number": 3,
+    "korean": "1:1 fitting에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for 1:1 fitting.",
+    "chunk": "We need / orthogonal confirmation / for 1:1 fitting.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for 1:1 fitting.",
+      "We need FACS confirmation for 1:1 fitting."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Email",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D05-S04",
+    "week": 5,
+    "day": 5,
+    "sentence_number": 4,
+    "korean": "sensorgram analysis에서는 residual pattern가 주요 리스크입니다.",
+    "english": "Residual pattern remains the main risk for sensorgram analysis.",
+    "chunk": "Residual pattern remains / the main risk / for sensorgram analysis.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Residual pattern remains the key concern.",
+      "Residual pattern remains relevant for prioritization."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Meeting",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D05-S05",
+    "week": 5,
+    "day": 5,
+    "sentence_number": 5,
+    "korean": "다음 단계로 model review을 우선하겠습니다.",
+    "english": "We should prioritize model review in the next step.",
+    "chunk": "We should prioritize / model review / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize model review before nomination.",
+      "We should prioritize model review for risk reduction."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Report",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D06-S01",
+    "week": 5,
+    "day": 6,
+    "sentence_number": 1,
+    "korean": "FACS panel에서는 target-positive binding가 핵심 지표입니다.",
+    "english": "Target-positive binding is the key readout for FACS panel.",
+    "chunk": "Target-positive binding is / the key readout / for FACS panel.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Cellular binding is the key point for this review.",
+      "Cell-panel test is the next step for FACS panel."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Data Interpretation",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D06-S02",
+    "week": 5,
+    "day": 6,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 cellular binding을 뒷받침합니다.",
+    "english": "The current data support cellular binding.",
+    "chunk": "The current data / support / cellular binding.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support cellular binding.",
+      "The current FACS data support cellular binding."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Email",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D06-S03",
+    "week": 5,
+    "day": 6,
+    "sentence_number": 3,
+    "korean": "cell binding에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for cell binding.",
+    "chunk": "We need / orthogonal confirmation / for cell binding.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for cell binding.",
+      "We need FACS confirmation for cell binding."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Meeting",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D06-S04",
+    "week": 5,
+    "day": 6,
+    "sentence_number": 4,
+    "korean": "FACS panel에서는 cell variation가 주요 리스크입니다.",
+    "english": "Cell variation remains the main risk for FACS panel.",
+    "chunk": "Cell variation remains / the main risk / for FACS panel.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Cell variation remains the key concern.",
+      "Cell variation remains relevant for prioritization."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Report",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D06-S05",
+    "week": 5,
+    "day": 6,
+    "sentence_number": 5,
+    "korean": "다음 단계로 cell-panel test을 우선하겠습니다.",
+    "english": "We should prioritize cell-panel test in the next step.",
+    "chunk": "We should prioritize / cell-panel test / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize cell-panel test before nomination.",
+      "We should prioritize cell-panel test for risk reduction."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Presentation",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D07-S01",
+    "week": 5,
+    "day": 7,
+    "sentence_number": 1,
+    "korean": "plate assay에서는 signal window가 핵심 지표입니다.",
+    "english": "Signal window is the key readout for plate assay.",
+    "chunk": "Signal window is / the key readout / for plate assay.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Plate readout is the key point for this review.",
+      "Elisa optimization is the next step for plate assay."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Email",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D07-S02",
+    "week": 5,
+    "day": 7,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 plate readout을 뒷받침합니다.",
+    "english": "The current data support plate readout.",
+    "chunk": "The current data / support / plate readout.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support plate readout.",
+      "The current FACS data support plate readout."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Meeting",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D07-S03",
+    "week": 5,
+    "day": 7,
+    "sentence_number": 3,
+    "korean": "ELISA window에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for ELISA window.",
+    "chunk": "We need / orthogonal confirmation / for ELISA window.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for ELISA window.",
+      "We need FACS confirmation for ELISA window."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Report",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D07-S04",
+    "week": 5,
+    "day": 7,
+    "sentence_number": 4,
+    "korean": "plate assay에서는 background signal가 주요 리스크입니다.",
+    "english": "Background signal remains the main risk for plate assay.",
+    "chunk": "Background signal remains / the main risk / for plate assay.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Background signal remains the key concern.",
+      "Background signal remains relevant for prioritization."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Presentation",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W05-D07-S05",
+    "week": 5,
+    "day": 7,
+    "sentence_number": 5,
+    "korean": "다음 단계로 ELISA optimization을 우선하겠습니다.",
+    "english": "We should prioritize ELISA optimization in the next step.",
+    "chunk": "We should prioritize / ELISA optimization / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize ELISA optimization before nomination.",
+      "We should prioritize ELISA optimization for risk reduction."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Vendor",
+    "category": "SPR / FACS / ELISA"
+  },
+  {
+    "id": "W06-D01-S01",
+    "week": 6,
+    "day": 1,
+    "sentence_number": 1,
+    "korean": "TCE design에서는 CD3 binding가 핵심 지표입니다.",
+    "english": "Cd3 binding is the key readout for TCE design.",
+    "chunk": "Cd3 binding is / the key readout / for TCE design.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Balanced potency is the key point for this review.",
+      "Cd3 tuning is the next step for TCE design."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Email",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D01-S02",
+    "week": 6,
+    "day": 1,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 balanced potency을 뒷받침합니다.",
+    "english": "The current data support balanced potency.",
+    "chunk": "The current data / support / balanced potency.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support balanced potency.",
+      "The current FACS data support balanced potency."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Meeting",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D01-S03",
+    "week": 6,
+    "day": 1,
+    "sentence_number": 3,
+    "korean": "CD3 arm에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for CD3 arm.",
+    "chunk": "We need / orthogonal confirmation / for CD3 arm.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for CD3 arm.",
+      "We need FACS confirmation for CD3 arm."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Report",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D01-S04",
+    "week": 6,
+    "day": 1,
+    "sentence_number": 4,
+    "korean": "TCE design에서는 high CD3 affinity가 주요 리스크입니다.",
+    "english": "High cd3 affinity remains the main risk for TCE design.",
+    "chunk": "High cd3 affinity remains / the main risk / for TCE design.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "High cd3 affinity remains the key concern.",
+      "High cd3 affinity remains relevant for prioritization."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Presentation",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D01-S05",
+    "week": 6,
+    "day": 1,
+    "sentence_number": 5,
+    "korean": "다음 단계로 CD3 tuning을 우선하겠습니다.",
+    "english": "We should prioritize CD3 tuning in the next step.",
+    "chunk": "We should prioritize / CD3 tuning / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize CD3 tuning before nomination.",
+      "We should prioritize CD3 tuning for risk reduction."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Vendor",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D02-S01",
+    "week": 6,
+    "day": 2,
+    "sentence_number": 1,
+    "korean": "conditional program에서는 pH selectivity가 핵심 지표입니다.",
+    "english": "Ph selectivity is the key readout for conditional program.",
+    "chunk": "Ph selectivity is / the key readout / for conditional program.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Conditional binding is the key point for this review.",
+      "Ph profiling is the next step for conditional program."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Meeting",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D02-S02",
+    "week": 6,
+    "day": 2,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 conditional binding을 뒷받침합니다.",
+    "english": "The current data support conditional binding.",
+    "chunk": "The current data / support / conditional binding.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support conditional binding.",
+      "The current FACS data support conditional binding."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Report",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D02-S03",
+    "week": 6,
+    "day": 2,
+    "sentence_number": 3,
+    "korean": "pH 의존 결합에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for pH-dependent binding.",
+    "chunk": "We need / orthogonal confirmation / for pH-dependent binding.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for pH-dependent binding.",
+      "We need FACS confirmation for pH-dependent binding."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Presentation",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D02-S04",
+    "week": 6,
+    "day": 2,
+    "sentence_number": 4,
+    "korean": "conditional program에서는 neutral binding가 주요 리스크입니다.",
+    "english": "Neutral binding remains the main risk for conditional program.",
+    "chunk": "Neutral binding remains / the main risk / for conditional program.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Neutral binding remains the key concern.",
+      "Neutral binding remains relevant for prioritization."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Vendor",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D02-S05",
+    "week": 6,
+    "day": 2,
+    "sentence_number": 5,
+    "korean": "다음 단계로 pH profiling을 우선하겠습니다.",
+    "english": "We should prioritize pH profiling in the next step.",
+    "chunk": "We should prioritize / pH profiling / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize pH profiling before nomination.",
+      "We should prioritize pH profiling for risk reduction."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Data Interpretation",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D03-S01",
+    "week": 6,
+    "day": 3,
+    "sentence_number": 1,
+    "korean": "conditional strategy에서는 tumor selectivity가 핵심 지표입니다.",
+    "english": "Tumor selectivity is the key readout for conditional strategy.",
+    "chunk": "Tumor selectivity is / the key readout / for conditional strategy.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Contextual activity is the key point for this review.",
+      "Tme modeling is the next step for conditional strategy."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Report",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D03-S02",
+    "week": 6,
+    "day": 3,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 contextual activity을 뒷받침합니다.",
+    "english": "The current data support contextual activity.",
+    "chunk": "The current data / support / contextual activity.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support contextual activity.",
+      "The current FACS data support contextual activity."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Presentation",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D03-S03",
+    "week": 6,
+    "day": 3,
+    "sentence_number": 3,
+    "korean": "종양 미세환경에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for tumor microenvironment.",
+    "chunk": "We need / orthogonal confirmation / for tumor microenvironment.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for tumor microenvironment.",
+      "We need FACS confirmation for tumor microenvironment."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Vendor",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D03-S04",
+    "week": 6,
+    "day": 3,
+    "sentence_number": 4,
+    "korean": "conditional strategy에서는 normal tissue signal가 주요 리스크입니다.",
+    "english": "Normal tissue signal remains the main risk for conditional strategy.",
+    "chunk": "Normal tissue signal remains / the main risk / for conditional strategy.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Normal tissue signal remains the key concern.",
+      "Normal tissue signal remains relevant for prioritization."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Data Interpretation",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D03-S05",
+    "week": 6,
+    "day": 3,
+    "sentence_number": 5,
+    "korean": "다음 단계로 TME modeling을 우선하겠습니다.",
+    "english": "We should prioritize TME modeling in the next step.",
+    "chunk": "We should prioritize / TME modeling / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize TME modeling before nomination.",
+      "We should prioritize TME modeling for risk reduction."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Email",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D04-S01",
+    "week": 6,
+    "day": 4,
+    "sentence_number": 1,
+    "korean": "co-culture assay에서는 T cell activation가 핵심 지표입니다.",
+    "english": "T cell activation is the key readout for co-culture assay.",
+    "chunk": "T cell activation is / the key readout / for co-culture assay.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Target dependence is the key point for this review.",
+      "Activation assay is the next step for co-culture assay."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Presentation",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D04-S02",
+    "week": 6,
+    "day": 4,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 target dependence을 뒷받침합니다.",
+    "english": "The current data support target dependence.",
+    "chunk": "The current data / support / target dependence.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support target dependence.",
+      "The current FACS data support target dependence."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Vendor",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D04-S03",
+    "week": 6,
+    "day": 4,
+    "sentence_number": 3,
+    "korean": "target 의존 활성에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for target-dependent activation.",
+    "chunk": "We need / orthogonal confirmation / for target-dependent activation.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for target-dependent activation.",
+      "We need FACS confirmation for target-dependent activation."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Data Interpretation",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D04-S04",
+    "week": 6,
+    "day": 4,
+    "sentence_number": 4,
+    "korean": "co-culture assay에서는 bystander activation가 주요 리스크입니다.",
+    "english": "Bystander activation remains the main risk for co-culture assay.",
+    "chunk": "Bystander activation remains / the main risk / for co-culture assay.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Bystander activation remains the key concern.",
+      "Bystander activation remains relevant for prioritization."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Email",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D04-S05",
+    "week": 6,
+    "day": 4,
+    "sentence_number": 5,
+    "korean": "다음 단계로 activation assay을 우선하겠습니다.",
+    "english": "We should prioritize activation assay in the next step.",
+    "chunk": "We should prioritize / activation assay / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize activation assay before nomination.",
+      "We should prioritize activation assay for risk reduction."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Meeting",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D05-S01",
+    "week": 6,
+    "day": 5,
+    "sentence_number": 1,
+    "korean": "safety assay에서는 cytokine release가 핵심 지표입니다.",
+    "english": "Cytokine release is the key readout for safety assay.",
+    "chunk": "Cytokine release is / the key readout / for safety assay.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Safety margin is the key point for this review.",
+      "Cytokine panel is the next step for safety assay."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Vendor",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D05-S02",
+    "week": 6,
+    "day": 5,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 safety margin을 뒷받침합니다.",
+    "english": "The current data support safety margin.",
+    "chunk": "The current data / support / safety margin.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support safety margin.",
+      "The current FACS data support safety margin."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Data Interpretation",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D05-S03",
+    "week": 6,
+    "day": 5,
+    "sentence_number": 3,
+    "korean": "cytokine risk에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for cytokine risk.",
+    "chunk": "We need / orthogonal confirmation / for cytokine risk.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for cytokine risk.",
+      "We need FACS confirmation for cytokine risk."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Email",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D05-S04",
+    "week": 6,
+    "day": 5,
+    "sentence_number": 4,
+    "korean": "safety assay에서는 IL-2 release가 주요 리스크입니다.",
+    "english": "Il-2 release remains the main risk for safety assay.",
+    "chunk": "Il-2 release remains / the main risk / for safety assay.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Il-2 release remains the key concern.",
+      "Il-2 release remains relevant for prioritization."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Meeting",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D05-S05",
+    "week": 6,
+    "day": 5,
+    "sentence_number": 5,
+    "korean": "다음 단계로 cytokine panel을 우선하겠습니다.",
+    "english": "We should prioritize cytokine panel in the next step.",
+    "chunk": "We should prioritize / cytokine panel / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize cytokine panel before nomination.",
+      "We should prioritize cytokine panel for risk reduction."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Report",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D06-S01",
+    "week": 6,
+    "day": 6,
+    "sentence_number": 1,
+    "korean": "bispecific review에서는 safety separation가 핵심 지표입니다.",
+    "english": "Safety separation is the key readout for bispecific review.",
+    "chunk": "Safety separation is / the key readout / for bispecific review.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Candidate margin is the key point for this review.",
+      "Window analysis is the next step for bispecific review."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Data Interpretation",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D06-S02",
+    "week": 6,
+    "day": 6,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 candidate margin을 뒷받침합니다.",
+    "english": "The current data support candidate margin.",
+    "chunk": "The current data / support / candidate margin.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support candidate margin.",
+      "The current FACS data support candidate margin."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Email",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D06-S03",
+    "week": 6,
+    "day": 6,
+    "sentence_number": 3,
+    "korean": "therapeutic window에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for therapeutic window.",
+    "chunk": "We need / orthogonal confirmation / for therapeutic window.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for therapeutic window.",
+      "We need FACS confirmation for therapeutic window."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Meeting",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D06-S04",
+    "week": 6,
+    "day": 6,
+    "sentence_number": 4,
+    "korean": "bispecific review에서는 narrow window가 주요 리스크입니다.",
+    "english": "Narrow window remains the main risk for bispecific review.",
+    "chunk": "Narrow window remains / the main risk / for bispecific review.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Narrow window remains the key concern.",
+      "Narrow window remains relevant for prioritization."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Report",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D06-S05",
+    "week": 6,
+    "day": 6,
+    "sentence_number": 5,
+    "korean": "다음 단계로 window analysis을 우선하겠습니다.",
+    "english": "We should prioritize window analysis in the next step.",
+    "chunk": "We should prioritize / window analysis / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize window analysis before nomination.",
+      "We should prioritize window analysis for risk reduction."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Presentation",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D07-S01",
+    "week": 6,
+    "day": 7,
+    "sentence_number": 1,
+    "korean": "expression review에서는 normal tissue binding가 핵심 지표입니다.",
+    "english": "Normal tissue binding is the key readout for expression review.",
+    "chunk": "Normal tissue binding is / the key readout / for expression review.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Toxicity risk is the key point for this review.",
+      "Tissue review is the next step for expression review."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Email",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D07-S02",
+    "week": 6,
+    "day": 7,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 toxicity risk을 뒷받침합니다.",
+    "english": "The current data support toxicity risk.",
+    "chunk": "The current data / support / toxicity risk.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support toxicity risk.",
+      "The current FACS data support toxicity risk."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Meeting",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D07-S03",
+    "week": 6,
+    "day": 7,
+    "sentence_number": 3,
+    "korean": "off-tumor 독성에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for off-tumor toxicity.",
+    "chunk": "We need / orthogonal confirmation / for off-tumor toxicity.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for off-tumor toxicity.",
+      "We need FACS confirmation for off-tumor toxicity."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Report",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D07-S04",
+    "week": 6,
+    "day": 7,
+    "sentence_number": 4,
+    "korean": "expression review에서는 target expression가 주요 리스크입니다.",
+    "english": "Target expression remains the main risk for expression review.",
+    "chunk": "Target expression remains / the main risk / for expression review.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Target expression remains the key concern.",
+      "Target expression remains relevant for prioritization."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Presentation",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W06-D07-S05",
+    "week": 6,
+    "day": 7,
+    "sentence_number": 5,
+    "korean": "다음 단계로 tissue review을 우선하겠습니다.",
+    "english": "We should prioritize tissue review in the next step.",
+    "chunk": "We should prioritize / tissue review / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize tissue review before nomination.",
+      "We should prioritize tissue review for risk reduction."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Vendor",
+    "category": "TCE / Bispecific / Conditional Activation"
+  },
+  {
+    "id": "W07-D01-S01",
+    "week": 7,
+    "day": 1,
+    "sentence_number": 1,
+    "korean": "CRO proposal에서는 technical scope가 핵심 지표입니다.",
+    "english": "Technical scope is the key readout for CRO proposal.",
+    "chunk": "Technical scope is / the key readout / for CRO proposal.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "The proposed scope is the key point for this review.",
+      "Proposal revision is the next step for CRO proposal."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Email",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D01-S02",
+    "week": 7,
+    "day": 1,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 the proposed scope을 뒷받침합니다.",
+    "english": "The current data support the proposed scope.",
+    "chunk": "The current data / support / the proposed scope.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support the proposed scope.",
+      "The current FACS data support the proposed scope."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Meeting",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D01-S03",
+    "week": 7,
+    "day": 1,
+    "sentence_number": 3,
+    "korean": "proposal 검토에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for proposal review.",
+    "chunk": "We need / orthogonal confirmation / for proposal review.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for proposal review.",
+      "We need FACS confirmation for proposal review."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Report",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D01-S04",
+    "week": 7,
+    "day": 1,
+    "sentence_number": 4,
+    "korean": "CRO proposal에서는 unclear assumptions가 주요 리스크입니다.",
+    "english": "Unclear assumptions remains the main risk for CRO proposal.",
+    "chunk": "Unclear assumptions remains / the main risk / for CRO proposal.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Unclear assumptions remains the key concern.",
+      "Unclear assumptions remains relevant for prioritization."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Presentation",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D01-S05",
+    "week": 7,
+    "day": 1,
+    "sentence_number": 5,
+    "korean": "다음 단계로 proposal revision을 우선하겠습니다.",
+    "english": "We should prioritize proposal revision in the next step.",
+    "chunk": "We should prioritize / proposal revision / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize proposal revision before nomination.",
+      "We should prioritize proposal revision for risk reduction."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Vendor",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D02-S01",
+    "week": 7,
+    "day": 2,
+    "sentence_number": 1,
+    "korean": "work package에서는 study scope가 핵심 지표입니다.",
+    "english": "Study scope is the key readout for work package.",
+    "chunk": "Study scope is / the key readout / for work package.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Revised scope is the key point for this review.",
+      "Scope alignment is the next step for work package."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Meeting",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D02-S02",
+    "week": 7,
+    "day": 2,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 revised scope을 뒷받침합니다.",
+    "english": "The current data support revised scope.",
+    "chunk": "The current data / support / revised scope.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support revised scope.",
+      "The current FACS data support revised scope."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Report",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D02-S03",
+    "week": 7,
+    "day": 2,
+    "sentence_number": 3,
+    "korean": "scope 조정에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for scope adjustment.",
+    "chunk": "We need / orthogonal confirmation / for scope adjustment.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for scope adjustment.",
+      "We need FACS confirmation for scope adjustment."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Presentation",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D02-S04",
+    "week": 7,
+    "day": 2,
+    "sentence_number": 4,
+    "korean": "work package에서는 scope creep가 주요 리스크입니다.",
+    "english": "Scope creep remains the main risk for work package.",
+    "chunk": "Scope creep remains / the main risk / for work package.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Scope creep remains the key concern.",
+      "Scope creep remains relevant for prioritization."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Vendor",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D02-S05",
+    "week": 7,
+    "day": 2,
+    "sentence_number": 5,
+    "korean": "다음 단계로 scope alignment을 우선하겠습니다.",
+    "english": "We should prioritize scope alignment in the next step.",
+    "chunk": "We should prioritize / scope alignment / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize scope alignment before nomination.",
+      "We should prioritize scope alignment for risk reduction."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Data Interpretation",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D03-S01",
+    "week": 7,
+    "day": 3,
+    "sentence_number": 1,
+    "korean": "vendor study에서는 final report가 핵심 지표입니다.",
+    "english": "Final report is the key readout for vendor study.",
+    "chunk": "Final report is / the key readout / for vendor study.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Data package is the key point for this review.",
+      "Deliverable check is the next step for vendor study."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Report",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D03-S02",
+    "week": 7,
+    "day": 3,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 data package을 뒷받침합니다.",
+    "english": "The current data support data package.",
+    "chunk": "The current data / support / data package.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support data package.",
+      "The current FACS data support data package."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Presentation",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D03-S03",
+    "week": 7,
+    "day": 3,
+    "sentence_number": 3,
+    "korean": "deliverables에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for deliverables.",
+    "chunk": "We need / orthogonal confirmation / for deliverables.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for deliverables.",
+      "We need FACS confirmation for deliverables."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Vendor",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D03-S04",
+    "week": 7,
+    "day": 3,
+    "sentence_number": 4,
+    "korean": "vendor study에서는 missing raw data가 주요 리스크입니다.",
+    "english": "Missing raw data remains the main risk for vendor study.",
+    "chunk": "Missing raw data remains / the main risk / for vendor study.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Missing raw data remains the key concern.",
+      "Missing raw data remains relevant for prioritization."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Data Interpretation",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D03-S05",
+    "week": 7,
+    "day": 3,
+    "sentence_number": 5,
+    "korean": "다음 단계로 deliverable check을 우선하겠습니다.",
+    "english": "We should prioritize deliverable check in the next step.",
+    "chunk": "We should prioritize / deliverable check / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize deliverable check before nomination.",
+      "We should prioritize deliverable check for risk reduction."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Email",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D04-S01",
+    "week": 7,
+    "day": 4,
+    "sentence_number": 1,
+    "korean": "CRO quote에서는 cost impact가 핵심 지표입니다.",
+    "english": "Cost impact is the key readout for CRO quote.",
+    "chunk": "Cost impact is / the key readout / for CRO quote.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Timeline feasibility is the key point for this review.",
+      "Timeline update is the next step for CRO quote."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Presentation",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D04-S02",
+    "week": 7,
+    "day": 4,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 timeline feasibility을 뒷받침합니다.",
+    "english": "The current data support timeline feasibility.",
+    "chunk": "The current data / support / timeline feasibility.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support timeline feasibility.",
+      "The current FACS data support timeline feasibility."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Vendor",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D04-S03",
+    "week": 7,
+    "day": 4,
+    "sentence_number": 3,
+    "korean": "예산과 일정에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for budget timeline.",
+    "chunk": "We need / orthogonal confirmation / for budget timeline.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for budget timeline.",
+      "We need FACS confirmation for budget timeline."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Data Interpretation",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D04-S04",
+    "week": 7,
+    "day": 4,
+    "sentence_number": 4,
+    "korean": "CRO quote에서는 budget pressure가 주요 리스크입니다.",
+    "english": "Budget pressure remains the main risk for CRO quote.",
+    "chunk": "Budget pressure remains / the main risk / for CRO quote.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Budget pressure remains the key concern.",
+      "Budget pressure remains relevant for prioritization."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Email",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D04-S05",
+    "week": 7,
+    "day": 4,
+    "sentence_number": 5,
+    "korean": "다음 단계로 timeline update을 우선하겠습니다.",
+    "english": "We should prioritize timeline update in the next step.",
+    "chunk": "We should prioritize / timeline update / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize timeline update before nomination.",
+      "We should prioritize timeline update for risk reduction."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Meeting",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D05-S01",
+    "week": 7,
+    "day": 5,
+    "sentence_number": 1,
+    "korean": "sequence request에서는 method choice가 핵심 지표입니다.",
+    "english": "Method choice is the key readout for sequence request.",
+    "chunk": "Method choice is / the key readout / for sequence request.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Sequence confirmation is the key point for this review.",
+      "Method confirmation is the next step for sequence request."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Vendor",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D05-S02",
+    "week": 7,
+    "day": 5,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 sequence confirmation을 뒷받침합니다.",
+    "english": "The current data support sequence confirmation.",
+    "chunk": "The current data / support / sequence confirmation.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support sequence confirmation.",
+      "The current FACS data support sequence confirmation."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Data Interpretation",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D05-S03",
+    "week": 7,
+    "day": 5,
+    "sentence_number": 3,
+    "korean": "NGS vs Sanger에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for NGS Sanger.",
+    "chunk": "We need / orthogonal confirmation / for NGS Sanger.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for NGS Sanger.",
+      "We need FACS confirmation for NGS Sanger."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Email",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D05-S04",
+    "week": 7,
+    "day": 5,
+    "sentence_number": 4,
+    "korean": "sequence request에서는 method mismatch가 주요 리스크입니다.",
+    "english": "Method mismatch remains the main risk for sequence request.",
+    "chunk": "Method mismatch remains / the main risk / for sequence request.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Method mismatch remains the key concern.",
+      "Method mismatch remains relevant for prioritization."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Meeting",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D05-S05",
+    "week": 7,
+    "day": 5,
+    "sentence_number": 5,
+    "korean": "다음 단계로 method confirmation을 우선하겠습니다.",
+    "english": "We should prioritize method confirmation in the next step.",
+    "chunk": "We should prioritize / method confirmation / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize method confirmation before nomination.",
+      "We should prioritize method confirmation for risk reduction."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Report",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D06-S01",
+    "week": 7,
+    "day": 6,
+    "sentence_number": 1,
+    "korean": "reformatting campaign에서는 clone transfer가 핵심 지표입니다.",
+    "english": "Clone transfer is the key readout for reformatting campaign.",
+    "chunk": "Clone transfer is / the key readout / for reformatting campaign.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Expression plan is the key point for this review.",
+      "Clone logistics is the next step for reformatting campaign."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Data Interpretation",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D06-S02",
+    "week": 7,
+    "day": 6,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 expression plan을 뒷받침합니다.",
+    "english": "The current data support expression plan.",
+    "chunk": "The current data / support / expression plan.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support expression plan.",
+      "The current FACS data support expression plan."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Email",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D06-S03",
+    "week": 7,
+    "day": 6,
+    "sentence_number": 3,
+    "korean": "96개 reformatting에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for 96-candidate reformatting.",
+    "chunk": "We need / orthogonal confirmation / for 96-candidate reformatting.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for 96-candidate reformatting.",
+      "We need FACS confirmation for 96-candidate reformatting."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Meeting",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D06-S04",
+    "week": 7,
+    "day": 6,
+    "sentence_number": 4,
+    "korean": "reformatting campaign에서는 transfer delay가 주요 리스크입니다.",
+    "english": "Transfer delay remains the main risk for reformatting campaign.",
+    "chunk": "Transfer delay remains / the main risk / for reformatting campaign.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Transfer delay remains the key concern.",
+      "Transfer delay remains relevant for prioritization."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Report",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D06-S05",
+    "week": 7,
+    "day": 6,
+    "sentence_number": 5,
+    "korean": "다음 단계로 clone logistics을 우선하겠습니다.",
+    "english": "We should prioritize clone logistics in the next step.",
+    "chunk": "We should prioritize / clone logistics / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize clone logistics before nomination.",
+      "We should prioritize clone logistics for risk reduction."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Presentation",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D07-S01",
+    "week": 7,
+    "day": 7,
+    "sentence_number": 1,
+    "korean": "external testing에서는 sample receipt가 핵심 지표입니다.",
+    "english": "Sample receipt is the key readout for external testing.",
+    "chunk": "Sample receipt is / the key readout / for external testing.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Testing start is the key point for this review.",
+      "Payment process is the next step for external testing."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Email",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D07-S02",
+    "week": 7,
+    "day": 7,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 testing start을 뒷받침합니다.",
+    "english": "The current data support testing start.",
+    "chunk": "The current data / support / testing start.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support testing start.",
+      "The current FACS data support testing start."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Meeting",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D07-S03",
+    "week": 7,
+    "day": 7,
+    "sentence_number": 3,
+    "korean": "샘플과 결제에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for sample payment.",
+    "chunk": "We need / orthogonal confirmation / for sample payment.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for sample payment.",
+      "We need FACS confirmation for sample payment."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Report",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D07-S04",
+    "week": 7,
+    "day": 7,
+    "sentence_number": 4,
+    "korean": "external testing에서는 invoice delay가 주요 리스크입니다.",
+    "english": "Invoice delay remains the main risk for external testing.",
+    "chunk": "Invoice delay remains / the main risk / for external testing.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Invoice delay remains the key concern.",
+      "Invoice delay remains relevant for prioritization."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Presentation",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W07-D07-S05",
+    "week": 7,
+    "day": 7,
+    "sentence_number": 5,
+    "korean": "다음 단계로 payment process을 우선하겠습니다.",
+    "english": "We should prioritize payment process in the next step.",
+    "chunk": "We should prioritize / payment process / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize payment process before nomination.",
+      "We should prioritize payment process for risk reduction."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Vendor",
+    "category": "Vendor / CRO / External Communication"
+  },
+  {
+    "id": "W08-D01-S01",
+    "week": 8,
+    "day": 1,
+    "sentence_number": 1,
+    "korean": "review meeting에서는 team alignment가 핵심 지표입니다.",
+    "english": "Team alignment is the key readout for review meeting.",
+    "chunk": "Team alignment is / the key readout / for review meeting.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Project direction is the key point for this review.",
+      "Review follow-up is the next step for review meeting."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Email",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D01-S02",
+    "week": 8,
+    "day": 1,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 project direction을 뒷받침합니다.",
+    "english": "The current data support project direction.",
+    "chunk": "The current data / support / project direction.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support project direction.",
+      "The current FACS data support project direction."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Meeting",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D01-S03",
+    "week": 8,
+    "day": 1,
+    "sentence_number": 3,
+    "korean": "internal review에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for internal review.",
+    "chunk": "We need / orthogonal confirmation / for internal review.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for internal review.",
+      "We need FACS confirmation for internal review."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Report",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D01-S04",
+    "week": 8,
+    "day": 1,
+    "sentence_number": 4,
+    "korean": "review meeting에서는 open issues가 주요 리스크입니다.",
+    "english": "Open issues remains the main risk for review meeting.",
+    "chunk": "Open issues remains / the main risk / for review meeting.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Open issues remains the key concern.",
+      "Open issues remains relevant for prioritization."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Presentation",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D01-S05",
+    "week": 8,
+    "day": 1,
+    "sentence_number": 5,
+    "korean": "다음 단계로 review follow-up을 우선하겠습니다.",
+    "english": "We should prioritize review follow-up in the next step.",
+    "chunk": "We should prioritize / review follow-up / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize review follow-up before nomination.",
+      "We should prioritize review follow-up for risk reduction."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Vendor",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D02-S01",
+    "week": 8,
+    "day": 2,
+    "sentence_number": 1,
+    "korean": "decision package에서는 risk profile가 핵심 지표입니다.",
+    "english": "Risk profile is the key readout for decision package.",
+    "chunk": "Risk profile is / the key readout / for decision package.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Risk mitigation is the key point for this review.",
+      "Risk review is the next step for decision package."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Meeting",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D02-S02",
+    "week": 8,
+    "day": 2,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 risk mitigation을 뒷받침합니다.",
+    "english": "The current data support risk mitigation.",
+    "chunk": "The current data / support / risk mitigation.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support risk mitigation.",
+      "The current FACS data support risk mitigation."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Report",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D02-S03",
+    "week": 8,
+    "day": 2,
+    "sentence_number": 3,
+    "korean": "risk assessment에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for risk assessment.",
+    "chunk": "We need / orthogonal confirmation / for risk assessment.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for risk assessment.",
+      "We need FACS confirmation for risk assessment."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Presentation",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D02-S04",
+    "week": 8,
+    "day": 2,
+    "sentence_number": 4,
+    "korean": "decision package에서는 technical risk가 주요 리스크입니다.",
+    "english": "Technical risk remains the main risk for decision package.",
+    "chunk": "Technical risk remains / the main risk / for decision package.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Technical risk remains the key concern.",
+      "Technical risk remains relevant for prioritization."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Vendor",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D02-S05",
+    "week": 8,
+    "day": 2,
+    "sentence_number": 5,
+    "korean": "다음 단계로 risk review을 우선하겠습니다.",
+    "english": "We should prioritize risk review in the next step.",
+    "chunk": "We should prioritize / risk review / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize risk review before nomination.",
+      "We should prioritize risk review for risk reduction."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Data Interpretation",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D03-S01",
+    "week": 8,
+    "day": 3,
+    "sentence_number": 1,
+    "korean": "lead discussion에서는 lead nomination가 핵심 지표입니다.",
+    "english": "Lead nomination is the key readout for lead discussion.",
+    "chunk": "Lead nomination is / the key readout / for lead discussion.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Recommended path is the key point for this review.",
+      "Recommendation update is the next step for lead discussion."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Report",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D03-S02",
+    "week": 8,
+    "day": 3,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 recommended path을 뒷받침합니다.",
+    "english": "The current data support recommended path.",
+    "chunk": "The current data / support / recommended path.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support recommended path.",
+      "The current FACS data support recommended path."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Presentation",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D03-S03",
+    "week": 8,
+    "day": 3,
+    "sentence_number": 3,
+    "korean": "recommendation에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for recommendation.",
+    "chunk": "We need / orthogonal confirmation / for recommendation.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for recommendation.",
+      "We need FACS confirmation for recommendation."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Vendor",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D03-S04",
+    "week": 8,
+    "day": 3,
+    "sentence_number": 4,
+    "korean": "lead discussion에서는 weak evidence가 주요 리스크입니다.",
+    "english": "Weak evidence remains the main risk for lead discussion.",
+    "chunk": "Weak evidence remains / the main risk / for lead discussion.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Weak evidence remains the key concern.",
+      "Weak evidence remains relevant for prioritization."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Data Interpretation",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D03-S05",
+    "week": 8,
+    "day": 3,
+    "sentence_number": 5,
+    "korean": "다음 단계로 recommendation update을 우선하겠습니다.",
+    "english": "We should prioritize recommendation update in the next step.",
+    "chunk": "We should prioritize / recommendation update / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize recommendation update before nomination.",
+      "We should prioritize recommendation update for risk reduction."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Email",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D04-S01",
+    "week": 8,
+    "day": 4,
+    "sentence_number": 1,
+    "korean": "portfolio review에서는 candidate priority가 핵심 지표입니다.",
+    "english": "Candidate priority is the key readout for portfolio review.",
+    "chunk": "Candidate priority is / the key readout / for portfolio review.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Portfolio ranking is the key point for this review.",
+      "Priority review is the next step for portfolio review."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Presentation",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D04-S02",
+    "week": 8,
+    "day": 4,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 portfolio ranking을 뒷받침합니다.",
+    "english": "The current data support portfolio ranking.",
+    "chunk": "The current data / support / portfolio ranking.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support portfolio ranking.",
+      "The current FACS data support portfolio ranking."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Vendor",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D04-S03",
+    "week": 8,
+    "day": 4,
+    "sentence_number": 3,
+    "korean": "우선순위에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for candidate prioritization.",
+    "chunk": "We need / orthogonal confirmation / for candidate prioritization.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for candidate prioritization.",
+      "We need FACS confirmation for candidate prioritization."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Data Interpretation",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D04-S04",
+    "week": 8,
+    "day": 4,
+    "sentence_number": 4,
+    "korean": "portfolio review에서는 unclear priority가 주요 리스크입니다.",
+    "english": "Unclear priority remains the main risk for portfolio review.",
+    "chunk": "Unclear priority remains / the main risk / for portfolio review.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Unclear priority remains the key concern.",
+      "Unclear priority remains relevant for prioritization."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Email",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D04-S05",
+    "week": 8,
+    "day": 4,
+    "sentence_number": 5,
+    "korean": "다음 단계로 priority review을 우선하겠습니다.",
+    "english": "We should prioritize priority review in the next step.",
+    "chunk": "We should prioritize / priority review / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize priority review before nomination.",
+      "We should prioritize priority review for risk reduction."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Meeting",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D05-S01",
+    "week": 8,
+    "day": 5,
+    "sentence_number": 1,
+    "korean": "go/no-go review에서는 decision logic가 핵심 지표입니다.",
+    "english": "Decision logic is the key readout for go/no-go review.",
+    "chunk": "Decision logic is / the key readout / for go/no-go review.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Go decision is the key point for this review.",
+      "Rationale summary is the next step for go/no-go review."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Vendor",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D05-S02",
+    "week": 8,
+    "day": 5,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 go decision을 뒷받침합니다.",
+    "english": "The current data support go decision.",
+    "chunk": "The current data / support / go decision.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support go decision.",
+      "The current FACS data support go decision."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Data Interpretation",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D05-S03",
+    "week": 8,
+    "day": 5,
+    "sentence_number": 3,
+    "korean": "decision rationale에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for decision rationale.",
+    "chunk": "We need / orthogonal confirmation / for decision rationale.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for decision rationale.",
+      "We need FACS confirmation for decision rationale."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Email",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D05-S04",
+    "week": 8,
+    "day": 5,
+    "sentence_number": 4,
+    "korean": "go/no-go review에서는 unclear rationale가 주요 리스크입니다.",
+    "english": "Unclear rationale remains the main risk for go/no-go review.",
+    "chunk": "Unclear rationale remains / the main risk / for go/no-go review.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Unclear rationale remains the key concern.",
+      "Unclear rationale remains relevant for prioritization."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Meeting",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D05-S05",
+    "week": 8,
+    "day": 5,
+    "sentence_number": 5,
+    "korean": "다음 단계로 rationale summary을 우선하겠습니다.",
+    "english": "We should prioritize rationale summary in the next step.",
+    "chunk": "We should prioritize / rationale summary / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize rationale summary before nomination.",
+      "We should prioritize rationale summary for risk reduction."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Report",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D06-S01",
+    "week": 8,
+    "day": 6,
+    "sentence_number": 1,
+    "korean": "action plan에서는 next milestone가 핵심 지표입니다.",
+    "english": "Next milestone is the key readout for action plan.",
+    "chunk": "Next milestone is / the key readout / for action plan.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Execution plan is the key point for this review.",
+      "Action tracking is the next step for action plan."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Data Interpretation",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D06-S02",
+    "week": 8,
+    "day": 6,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 execution plan을 뒷받침합니다.",
+    "english": "The current data support execution plan.",
+    "chunk": "The current data / support / execution plan.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support execution plan.",
+      "The current FACS data support execution plan."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Email",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D06-S03",
+    "week": 8,
+    "day": 6,
+    "sentence_number": 3,
+    "korean": "next step에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for next step.",
+    "chunk": "We need / orthogonal confirmation / for next step.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for next step.",
+      "We need FACS confirmation for next step."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Meeting",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D06-S04",
+    "week": 8,
+    "day": 6,
+    "sentence_number": 4,
+    "korean": "action plan에서는 resource gap가 주요 리스크입니다.",
+    "english": "Resource gap remains the main risk for action plan.",
+    "chunk": "Resource gap remains / the main risk / for action plan.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Resource gap remains the key concern.",
+      "Resource gap remains relevant for prioritization."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Report",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D06-S05",
+    "week": 8,
+    "day": 6,
+    "sentence_number": 5,
+    "korean": "다음 단계로 action tracking을 우선하겠습니다.",
+    "english": "We should prioritize action tracking in the next step.",
+    "chunk": "We should prioritize / action tracking / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize action tracking before nomination.",
+      "We should prioritize action tracking for risk reduction."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Presentation",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D07-S01",
+    "week": 8,
+    "day": 7,
+    "sentence_number": 1,
+    "korean": "science presentation에서는 clear message가 핵심 지표입니다.",
+    "english": "Clear message is the key readout for science presentation.",
+    "chunk": "Clear message is / the key readout / for science presentation.",
+    "pattern": "[Readout] is the key readout for [context].",
+    "substitution_drills": [
+      "Executive summary is the key point for this review.",
+      "Slide revision is the next step for science presentation."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Email",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D07-S02",
+    "week": 8,
+    "day": 7,
+    "sentence_number": 2,
+    "korean": "현재 데이터는 executive summary을 뒷받침합니다.",
+    "english": "The current data support executive summary.",
+    "chunk": "The current data / support / executive summary.",
+    "pattern": "The current data support [claim].",
+    "substitution_drills": [
+      "The current SPR data support executive summary.",
+      "The current FACS data support executive summary."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Meeting",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D07-S03",
+    "week": 8,
+    "day": 7,
+    "sentence_number": 3,
+    "korean": "발표 표현에는 추가 확인이 필요합니다.",
+    "english": "We need orthogonal confirmation for presentation language.",
+    "chunk": "We need / orthogonal confirmation / for presentation language.",
+    "pattern": "We need orthogonal confirmation for [topic].",
+    "substitution_drills": [
+      "We need ELISA confirmation for presentation language.",
+      "We need FACS confirmation for presentation language."
+    ],
+    "difficulty": "Basic",
+    "use_case": "Report",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D07-S04",
+    "week": 8,
+    "day": 7,
+    "sentence_number": 4,
+    "korean": "science presentation에서는 message dilution가 주요 리스크입니다.",
+    "english": "Message dilution remains the main risk for science presentation.",
+    "chunk": "Message dilution remains / the main risk / for science presentation.",
+    "pattern": "[Risk] remains the main risk for [context].",
+    "substitution_drills": [
+      "Message dilution remains the key concern.",
+      "Message dilution remains relevant for prioritization."
+    ],
+    "difficulty": "Intermediate",
+    "use_case": "Presentation",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  },
+  {
+    "id": "W08-D07-S05",
+    "week": 8,
+    "day": 7,
+    "sentence_number": 5,
+    "korean": "다음 단계로 slide revision을 우선하겠습니다.",
+    "english": "We should prioritize slide revision in the next step.",
+    "chunk": "We should prioritize / slide revision / in the next step.",
+    "pattern": "We should prioritize [action] in the next step.",
+    "substitution_drills": [
+      "We should prioritize slide revision before nomination.",
+      "We should prioritize slide revision for risk reduction."
+    ],
+    "difficulty": "Advanced",
+    "use_case": "Vendor",
+    "category": "Internal Reporting / Presentation / Decision Making"
+  }
+]

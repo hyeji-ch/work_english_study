@@ -1,0 +1,261 @@
+:root {
+  --bg: #f7faf8;
+  --surface: #ffffff;
+  --soft: #e6f0ea;
+  --border: #a8c3b0;
+  --text: #1f2b24;
+  --muted-text: #5e7065;
+  --green-text: #2f5d46;
+  --accent: #6b8f71;
+  --gray: #eef1ee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: Arial, "Noto Sans KR", sans-serif;
+  line-height: 1.55;
+}
+
+button,
+select {
+  font: inherit;
+}
+
+.app-shell {
+  width: min(980px, 100%);
+  margin: 0 auto;
+  padding: 22px 16px 32px;
+}
+
+.app-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.7rem, 5vw, 2.4rem);
+  letter-spacing: 0;
+}
+
+.app-header p {
+  margin: 4px 0 0;
+  color: var(--muted-text);
+}
+
+.summary-pill,
+.badge,
+.footer-summary span {
+  border: 1px solid var(--border);
+  background: var(--soft);
+  color: var(--green-text);
+  border-radius: 999px;
+  padding: 6px 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.day-nav {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 1fr;
+  gap: 10px;
+  align-items: stretch;
+  margin: 14px 0;
+}
+
+.day-nav button,
+.answer-button {
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--green-text);
+  border-radius: 8px;
+  padding: 12px 14px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.day-nav button:hover,
+.answer-button:hover {
+  background: var(--soft);
+  border-color: var(--accent);
+}
+
+.day-nav button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+.day-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  min-height: 52px;
+  border: 1px solid var(--border);
+  background: var(--soft);
+  color: var(--green-text);
+  border-radius: 8px;
+}
+
+.day-display span {
+  font-size: 0.88rem;
+  color: var(--muted-text);
+}
+
+.day-progress {
+  color: var(--muted-text);
+  margin: 10px 0 6px;
+}
+
+.cards {
+  display: grid;
+  gap: 14px;
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid #d7e2da;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.card-id {
+  color: var(--muted-text);
+  font-size: 0.85rem;
+}
+
+.korean {
+  margin: 6px 0 12px;
+  font-size: 1.08rem;
+  font-weight: 700;
+}
+
+.english {
+  margin: 12px 0;
+  padding: 10px 12px;
+  background: var(--soft);
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+  color: var(--green-text);
+  font-weight: 700;
+}
+
+.details {
+  margin-top: 10px;
+}
+
+.details summary {
+  color: var(--green-text);
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.details p,
+.details ul {
+  margin: 8px 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.78rem;
+  padding: 3px 8px;
+}
+
+.progress-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.progress-row select {
+  min-width: 150px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+  color: var(--green-text);
+  padding: 8px;
+}
+
+.footer-summary {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 12px 0 0;
+  background: linear-gradient(180deg, rgba(247, 250, 248, 0), var(--bg) 22%);
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 680px) {
+  .app-shell {
+    padding: 16px 12px 28px;
+  }
+
+  .app-header {
+    display: block;
+  }
+
+  .summary-pill {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .day-nav {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .day-display {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  #prev-day {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  #next-day {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .card-top,
+  .progress-row {
+    display: block;
+  }
+
+  .progress-row select {
+    width: 100%;
+    margin-top: 8px;
+  }
+}
