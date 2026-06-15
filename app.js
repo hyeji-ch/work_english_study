@@ -1,140 +1,47 @@
 const TOTAL_DAYS = 56;
 const DAYS_PER_WEEK = 7;
-const STORAGE_KEY = "workEnglishStudyProgress.v1";
+const STATE_KEY = "workEnglish:state";
 
 let cards = [];
-let currentDayIndex = Number(localStorage.getItem("workEnglishStudyDay") || "1");
-let activeMode = localStorage.getItem("workEnglishStudyMode") || "daily";
-let activeFilter = loadSavedFilter();
-let availableVoices = [];
-let currentUtteranceText = "";
+let voices = [];
+let flashIndex = 0;
+let flashFlipped = false;
+let selectedSituation = null;
+let selectedPattern = null;
 
-const FILTERS = {
-  category: [
-    "Core R&D Communication",
-    "Experimental Design and Assay Conditions",
-    "Data Interpretation",
-    "Antibody Discovery and Screening",
-    "SPR / FACS / ELISA",
-    "TCE / Bispecific / Conditional Activation",
-    "Vendor / CRO / External Communication",
-    "Internal Reporting / Presentation / Decision Making",
-  ],
-  difficulty: ["Basic", "Intermediate", "Advanced"],
-  use_case: ["Email", "Meeting", "Report", "Presentation", "Vendor", "Data Interpretation"],
+const defaultState = {
+  currentDay: 1,
+  cardProgress: {},
+  completedDays: {},
+  activeView: "today",
+  selectedFilter: { category: "All", use_case: "All", difficulty: "All" },
+  ttsSettings: { lang: "en-US", rate: 1.0, pitch: 1.0 }
 };
 
-function clampDay(value) {
-  return Math.min(Math.max(value, 1), TOTAL_DAYS);
+function loadState() {
+  try {
+    return { ...defaultState, ...(JSON.parse(localStorage.getItem(STATE_KEY)) || {}) };
+  } catch {
+    return structuredClone(defaultState);
+  }
+}
+
+let state = loadState();
+
+function saveState() {
+  localStorage.setItem(STATE_KEY, JSON.stringify(state));
+}
+
+function clampDay(day) {
+  return Math.min(Math.max(day, 1), TOTAL_DAYS);
 }
 
 function dayToWeekDay(dayIndex) {
-  const week = Math.floor((dayIndex - 1) / DAYS_PER_WEEK) + 1;
-  const day = ((dayIndex - 1) % DAYS_PER_WEEK) + 1;
-  return { week, day };
+  return { week: Math.floor((dayIndex - 1) / DAYS_PER_WEEK) + 1, day: ((dayIndex - 1) % DAYS_PER_WEEK) + 1 };
 }
 
-function loadProgress() {
-  try {
-    const raw = localStorage.getItem(STORAGE_KEY);
-    return raw ? JSON.parse(raw) : {};
-  } catch {
-    return {};
-  }
-}
-
-function loadSavedFilter() {
-  try {
-    const raw = localStorage.getItem("workEnglishStudyFilter");
-    return raw ? JSON.parse(raw) : null;
-  } catch {
-    return null;
-  }
-}
-
-function saveFilter() {
-  if (activeFilter) {
-    localStorage.setItem("workEnglishStudyFilter", JSON.stringify(activeFilter));
-  } else {
-    localStorage.removeItem("workEnglishStudyFilter");
-  }
-}
-
-function saveProgress(progress) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(progress));
-}
-
-function speechSupported() {
-  return "speechSynthesis" in window && "SpeechSynthesisUtterance" in window;
-}
-
-function refreshVoices() {
-  if (!speechSupported()) return;
-  availableVoices = window.speechSynthesis.getVoices();
-}
-
-function preferredVoice() {
-  if (!speechSupported()) return null;
-  refreshVoices();
-  const mode = document.getElementById("voice-mode")?.value || "auto";
-  const targets = mode === "auto" ? ["en-US", "en-GB"] : [mode];
-  for (const lang of targets) {
-    const exact = availableVoices.find((voice) => voice.lang === lang);
-    if (exact) return exact;
-    const prefix = availableVoices.find((voice) => voice.lang && voice.lang.startsWith(lang));
-    if (prefix) return prefix;
-  }
-  return availableVoices.find((voice) => voice.lang && voice.lang.startsWith("en")) || null;
-}
-
-function speakEnglish(text) {
-  if (!speechSupported()) {
-    alert("This browser does not support speech synthesis.");
-    return;
-  }
-  if (window.speechSynthesis.speaking && currentUtteranceText === text) {
-    window.speechSynthesis.cancel();
-    currentUtteranceText = "";
-    return;
-  }
-  window.speechSynthesis.cancel();
-  const utterance = new SpeechSynthesisUtterance(text);
-  const selectedVoice = preferredVoice();
-  const selectedRate = Number(document.getElementById("voice-rate")?.value || "1.0");
-  utterance.lang = selectedVoice?.lang || document.getElementById("voice-mode")?.value || "en-US";
-  utterance.voice = selectedVoice;
-  utterance.rate = selectedRate;
-  utterance.pitch = 1.0;
-  utterance.onend = () => { currentUtteranceText = ""; };
-  utterance.onerror = () => { currentUtteranceText = ""; };
-  currentUtteranceText = text;
-  window.speechSynthesis.speak(utterance);
-}
-
-function updateSpeechSupportMessage() {
-  const element = document.getElementById("speech-support");
-  if (!element) return;
-  element.textContent = speechSupported()
-    ? "Voice: browser TTS ready"
-    : "Voice: speech synthesis is not supported in this browser";
-  document.querySelectorAll("[data-speak-card]").forEach((button) => {
-    button.disabled = !speechSupported();
-  });
-}
-
-function getStatus(cardId) {
-  return loadProgress()[cardId] || "Not studied";
-}
-
-function setStatus(cardId, status) {
-  const progress = loadProgress();
-  if (status === "Not studied") {
-    delete progress[cardId];
-  } else {
-    progress[cardId] = status;
-  }
-  saveProgress(progress);
-  render();
+function weekDayToIndex(week, day) {
+  return (week - 1) * DAYS_PER_WEEK + day;
 }
 
 function escapeHtml(value) {
@@ -146,263 +53,309 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
-function badge(text) {
-  return `<span class="badge">${escapeHtml(text)}</span>`;
+function statusOf(cardId) {
+  return state.cardProgress[cardId] || "Not studied";
 }
 
-function tagBadge(type, text) {
-  const label = type === "use_case" ? "Use case" : type[0].toUpperCase() + type.slice(1);
-  return `<button class="badge" type="button" data-tag-type="${type}" data-tag-value="${escapeHtml(text)}" aria-label="Filter by ${label}: ${escapeHtml(text)}">${escapeHtml(text)}</button>`;
-}
-
-function applyTagFilter(type, value) {
-  activeFilter = { type, value };
-  activeMode = "tag";
-  localStorage.setItem("workEnglishStudyMode", activeMode);
-  saveFilter();
+function setStatus(cardId, status) {
+  if (status === "Not studied") delete state.cardProgress[cardId];
+  else state.cardProgress[cardId] = status;
+  updateCompletedDays();
+  saveState();
   render();
 }
 
-function clearFilter() {
-  activeFilter = null;
-  saveFilter();
-  render();
+function updateCompletedDays() {
+  state.completedDays = {};
+  for (let dayIndex = 1; dayIndex <= TOTAL_DAYS; dayIndex += 1) {
+    const { week, day } = dayToWeekDay(dayIndex);
+    const dayCards = cards.filter((card) => card.week === week && card.day === day);
+    if (dayCards.length === 5 && dayCards.every((card) => statusOf(card.id) === "Mastered")) {
+      state.completedDays[String(dayIndex)] = true;
+    }
+  }
 }
 
-function filterLabel(filter) {
-  if (!filter) return "No tag filter selected.";
-  const label = filter.type === "use_case" ? "Use case" : filter.type[0].toUpperCase() + filter.type.slice(1);
-  return `${label}: ${filter.value}`;
+function dashboardCounts() {
+  const values = Object.values(state.cardProgress);
+  return {
+    mastered: values.filter((value) => value === "Mastered").length,
+    review: values.filter((value) => value === "Need review").length,
+    completedDays: Object.keys(state.completedDays).length
+  };
 }
 
-function filteredCards() {
-  if (!activeFilter) return cards;
-  return cards.filter((card) => card[activeFilter.type] === activeFilter.value);
+function badge(text, extra = "") {
+  return `<span class="badge ${extra}">${escapeHtml(text)}</span>`;
 }
 
-function cardHtml(card) {
-  const status = getStatus(card.id);
+function stateButtons(card) {
+  const current = statusOf(card.id);
+  return `<div class="state-row">
+    <button class="btn gray ${current === "Not studied" ? "on" : ""}" data-status-card="${card.id}" data-status-value="Not studied">아직</button>
+    <button class="btn primary ${current === "Mastered" ? "on" : ""}" data-status-card="${card.id}" data-status-value="Mastered">익혔다</button>
+    <button class="btn olive ${current === "Need review" ? "on" : ""}" data-status-card="${card.id}" data-status-value="Need review">다시 볼 문장</button>
+  </div>`;
+}
+
+function answerBlock(card) {
   const drills = Array.isArray(card.substitution_drills) ? card.substitution_drills : [];
-  return `
-    <article class="card" data-card-id="${escapeHtml(card.id)}">
-      <div class="card-top">
-        <div class="card-id">${escapeHtml(card.id)} · Week ${card.week} Day ${card.day}</div>
-        <div>${badge(status)}</div>
-      </div>
-      <div class="korean">${escapeHtml(card.korean)}</div>
-      <div class="answer-actions">
-        <button class="answer-button" type="button" data-answer-button="${escapeHtml(card.id)}">Show Answer</button>
-        <button class="speak-button" type="button" data-speak-card="${escapeHtml(card.id)}">▶ 발음</button>
-      </div>
-      <div class="answer hidden" id="answer-${escapeHtml(card.id)}">
-        <div class="english">${escapeHtml(card.english)}</div>
-        <details class="details" open>
-          <summary>Chunk / Pattern / Substitution Drills</summary>
-          <p><strong>Chunk</strong><br>${escapeHtml(card.chunk)}</p>
-          <p><strong>Pattern</strong><br>${escapeHtml(card.pattern)}</p>
-          <p><strong>Substitution drills</strong></p>
-          <ul>${drills.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>
-        </details>
-      </div>
-      <div class="tags">
-        ${tagBadge("category", card.category)}
-        ${tagBadge("difficulty", card.difficulty)}
-        ${tagBadge("use_case", card.use_case)}
-      </div>
-      <div class="progress-buttons" aria-label="Progress buttons">
-        <button class="state-button not-yet ${status === "Not studied" ? "active" : ""}" type="button" data-status-card="${escapeHtml(card.id)}" data-status-value="Not studied">아직</button>
-        <button class="state-button learned ${status === "Mastered" ? "active" : ""}" type="button" data-status-card="${escapeHtml(card.id)}" data-status-value="Mastered">익혔다</button>
-        <button class="state-button review ${status === "Need review" ? "active" : ""}" type="button" data-status-card="${escapeHtml(card.id)}" data-status-value="Need review">다시 볼 문장</button>
-      </div>
-    </article>
-  `;
+  return `<div class="answer hidden" id="answer-${card.id}">
+    <div class="english">${escapeHtml(card.english)}</div>
+    <details>
+      <summary>Chunk / Pattern / Drill</summary>
+      <p><strong>Chunk</strong><br>${escapeHtml(card.chunk)}</p>
+      <p><strong>Pattern</strong><br>${escapeHtml(card.pattern)}</p>
+      <ul>${drills.map((drill) => `<li>${escapeHtml(drill)}</li>`).join("")}</ul>
+    </details>
+  </div>`;
 }
 
-function reviewCardHtml(card) {
-  return cardHtml(card);
+function sentenceCard(card) {
+  return `<article class="sentence-card">
+    <div class="meta-row">
+      ${badge(card.id)}
+      ${badge(card.category)}
+      ${badge(card.use_case)}
+      ${badge(card.difficulty)}
+    </div>
+    <div class="ko">${escapeHtml(card.korean)}</div>
+    <div class="answer-actions">
+      <button class="btn" data-toggle-answer="${card.id}">Show Answer</button>
+      <button class="btn" data-speak-card="${card.id}">🔊 발음</button>
+    </div>
+    ${answerBlock(card)}
+    ${stateButtons(card)}
+  </article>`;
+}
+
+function speak(text) {
+  if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+    alert("이 브라우저는 SpeechSynthesis를 지원하지 않습니다.");
+    return;
+  }
+  window.speechSynthesis.cancel();
+  const utterance = new SpeechSynthesisUtterance(text);
+  const usVoice = voices.find((voice) => voice.lang === "en-US") || voices.find((voice) => voice.lang?.startsWith("en"));
+  utterance.lang = "en-US";
+  utterance.voice = usVoice || null;
+  utterance.rate = state.ttsSettings.rate || 1.0;
+  utterance.pitch = 1.0;
+  window.speechSynthesis.speak(utterance);
 }
 
 function dayCards() {
-  const { week, day } = dayToWeekDay(currentDayIndex);
+  const { week, day } = dayToWeekDay(state.currentDay);
   return cards
     .filter((card) => card.week === week && card.day === day)
     .sort((a, b) => a.sentence_number - b.sentence_number);
 }
 
-function updateSummary() {
-  const progress = loadProgress();
-  const values = Object.values(progress);
-  const needReview = values.filter((value) => value === "Need review").length;
-  const mastered = values.filter((value) => value === "Mastered").length;
-  const notYet = Math.max(cards.length - mastered - needReview, 0);
-  document.getElementById("mastered-count").textContent = `익힌 문장: ${mastered}`;
-  document.getElementById("review-count").textContent = `다시 볼 문장: ${needReview}`;
-  document.getElementById("not-yet-count").textContent = `아직: ${notYet}`;
-  document.getElementById("total-progress").textContent = `${mastered} / ${cards.length} 익힘`;
+function renderDashboard() {
+  const counts = dashboardCounts();
+  document.getElementById("dash-day").innerHTML = `${state.currentDay}<span class="small">/56</span>`;
+  document.getElementById("dash-mastered").textContent = counts.mastered;
+  document.getElementById("dash-review").textContent = counts.review;
 }
 
-function bindCardEvents() {
-  document.querySelectorAll("[data-tag-type]").forEach((button) => {
-    button.addEventListener("click", () => {
-      applyTagFilter(button.getAttribute("data-tag-type"), button.getAttribute("data-tag-value"));
-    });
-  });
-
-  document.querySelectorAll("[data-answer-button]").forEach((button) => {
-    button.addEventListener("click", () => {
-      const cardId = button.getAttribute("data-answer-button");
-      const answer = document.getElementById(`answer-${cardId}`);
-      const isHidden = answer.classList.toggle("hidden");
-      button.textContent = isHidden ? "Show Answer" : "Hide Answer";
-    });
-  });
-
-  document.querySelectorAll("[data-speak-card]").forEach((button) => {
-    button.disabled = !speechSupported();
-    button.addEventListener("click", () => {
-      const cardId = button.getAttribute("data-speak-card");
-      const card = cards.find((item) => item.id === cardId);
-      if (card) speakEnglish(card.english);
-    });
-  });
-
-  document.querySelectorAll("[data-status-card]").forEach((button) => {
-    button.addEventListener("click", () => {
-      setStatus(button.getAttribute("data-status-card"), button.getAttribute("data-status-value"));
-    });
-  });
-}
-
-function renderModeMenu() {
-  document.querySelectorAll("[data-mode]").forEach((button) => {
-    button.classList.toggle("active", button.getAttribute("data-mode") === activeMode);
-  });
-}
-
-function renderFilterControls(resultCount) {
-  const panel = document.getElementById("filter-panel");
-  panel.classList.toggle("hidden", activeMode !== "tag");
-  if (activeMode !== "tag") return;
-
-  document.getElementById("filter-status").textContent = activeFilter
-    ? `Showing ${resultCount} cards for ${filterLabel(activeFilter)}`
-    : `Showing all ${resultCount} cards. Select a tag filter.`;
-
-  const groupTitles = {
-    category: "Category filters",
-    difficulty: "Difficulty filters",
-    use_case: "Use case filters",
-  };
-  document.getElementById("filter-groups").innerHTML = Object.entries(FILTERS).map(([type, values]) => `
-    <div class="filter-group">
-      <h3>${groupTitles[type]}</h3>
-      <div class="filter-buttons">
-        ${values.map((value) => {
-          const active = activeFilter && activeFilter.type === type && activeFilter.value === value;
-          return `<button class="tag-button ${active ? "active" : ""}" type="button" data-filter-type="${type}" data-filter-value="${escapeHtml(value)}">${escapeHtml(value)}</button>`;
-        }).join("")}
-      </div>
+function renderToday() {
+  const { week, day } = dayToWeekDay(state.currentDay);
+  const current = dayCards();
+  document.getElementById("view-today").innerHTML = `
+    <div class="daypick">
+      <div class="day-label">오늘의 5문장<strong>Week ${week} · Day ${day}</strong></div>
+      <button class="round-btn" id="prev-day" ${state.currentDay === 1 ? "disabled" : ""}>‹</button>
+      <button class="round-btn" id="next-day" ${state.currentDay === TOTAL_DAYS ? "disabled" : ""}>›</button>
     </div>
-  `).join("");
+    <section class="today-card">
+      <div class="section-title">TODAY</div>
+      <p class="note">Korean을 보고 English를 말한 뒤, Show Answer로 확인하세요.</p>
+    </section>
+    ${current.map(sentenceCard).join("")}
+  `;
+}
 
-  document.querySelectorAll("[data-filter-type]").forEach((button) => {
-    button.addEventListener("click", () => {
-      applyTagFilter(button.getAttribute("data-filter-type"), button.getAttribute("data-filter-value"));
-    });
+function unique(field) {
+  return ["All", ...Array.from(new Set(cards.map((card) => card[field]).filter(Boolean))).sort()];
+}
+
+function filteredFlashCards() {
+  return cards.filter((card) =>
+    (state.selectedFilter.category === "All" || card.category === state.selectedFilter.category) &&
+    (state.selectedFilter.use_case === "All" || card.use_case === state.selectedFilter.use_case) &&
+    (state.selectedFilter.difficulty === "All" || card.difficulty === state.selectedFilter.difficulty)
+  );
+}
+
+function chipRow(field, label) {
+  return `<div class="section-title">${label}</div><div class="filter-row">${unique(field).map((value) => {
+    const on = state.selectedFilter[field] === value;
+    return `<button class="chip ${on ? "on" : ""}" data-filter-field="${field}" data-filter-value="${escapeHtml(value)}">${escapeHtml(value)}</button>`;
+  }).join("")}</div>`;
+}
+
+function renderCardsView() {
+  const deck = filteredFlashCards();
+  if (flashIndex >= deck.length) flashIndex = 0;
+  const card = deck[flashIndex];
+  document.getElementById("view-cards").innerHTML = `
+    ${chipRow("category", "Category")}
+    ${chipRow("use_case", "Use case")}
+    ${chipRow("difficulty", "Difficulty")}
+    ${card ? `<div class="counter">${flashIndex + 1} / ${deck.length}</div>
+      <article class="flashcard" id="flashcard">
+        <div class="flash-prompt">${flashFlipped ? "ANSWER" : "SAY THIS IN ENGLISH"}</div>
+        ${flashFlipped ? `<div class="flash-en">${escapeHtml(card.english)}</div><div class="flash-sub">${escapeHtml(card.chunk)}<br>${escapeHtml(card.pattern)}</div>` : `<div class="flash-ko">${escapeHtml(card.korean)}</div>`}
+        <div class="flash-sub">Tap card to flip</div>
+      </article>
+      <div class="judge-row">
+        <button class="btn" id="prev-card">이전</button>
+        <button class="btn" data-speak-card="${card.id}">🔊 발음</button>
+        <button class="btn" id="next-card">다음</button>
+      </div>
+      ${stateButtons(card)}` : `<p class="note">선택한 필터에 해당하는 카드가 없습니다.</p>`}
+  `;
+}
+
+const situationDefs = [
+  { name: "Vendor scope clarification", category: "Vendor / CRO / External Communication", use_case: "Vendor" },
+  { name: "Internal data review", category: "Data Interpretation", use_case: "Data Interpretation" },
+  { name: "SPR/FACS result discussion", category: "SPR / FACS / ELISA", use_case: "Data Interpretation" },
+  { name: "Candidate prioritization", category: "Antibody Discovery and Screening", use_case: "Meeting" },
+  { name: "TCE strategy discussion", category: "TCE / Bispecific / Conditional Activation", use_case: "Presentation" },
+  { name: "Presentation wording", category: "Internal Reporting / Presentation / Decision Making", use_case: "Presentation" },
+  { name: "Risk and timeline alignment", category: "Internal Reporting / Presentation / Decision Making", use_case: "Meeting" }
+];
+
+function situationCards(def) {
+  return cards.filter((card) => card.category === def.category || card.use_case === def.use_case);
+}
+
+function renderSituations() {
+  const selected = selectedSituation ? situationDefs.find((item) => item.name === selectedSituation) : null;
+  const list = selected ? situationCards(selected) : [];
+  document.getElementById("view-situations").innerHTML = `
+    <div class="section-title">업무 상황</div>
+    ${situationDefs.map((item) => {
+      const count = situationCards(item).length;
+      return `<article class="situation-card" data-situation="${escapeHtml(item.name)}">
+        <h3>${escapeHtml(item.name)}</h3>
+        <p>${escapeHtml(item.category)} · ${escapeHtml(item.use_case)} · ${count} cards</p>
+      </article>`;
+    }).join("")}
+    ${selected ? `<div class="section-title">${escapeHtml(selected.name)}</div><div class="inline-list">${list.slice(0, 30).map(sentenceCard).join("")}</div>` : ""}
+  `;
+}
+
+function renderRoadmap() {
+  const weekTitles = Array.from(new Set(cards.map((card) => `${card.week}|${card.category}`))).map((item) => {
+    const [week, category] = item.split("|");
+    return { week: Number(week), category };
   });
+  document.getElementById("view-roadmap").innerHTML = `
+    <div class="section-title">8주 로드맵</div>
+    ${weekTitles.map((weekInfo) => `<section class="week-block">
+      <h3 class="week-title">Week ${weekInfo.week}</h3>
+      <p class="week-sub">${escapeHtml(weekInfo.category)}</p>
+      <div class="week-days">${Array.from({ length: 7 }, (_, index) => {
+        const day = index + 1;
+        const dayIndex = weekDayToIndex(weekInfo.week, day);
+        const done = state.completedDays[String(dayIndex)];
+        return `<button class="day-cell ${done ? "done" : ""}" data-go-day="${dayIndex}">${done ? "✓ " : ""}D${day}</button>`;
+      }).join("")}</div>
+    </section>`).join("")}
+  `;
 }
 
-function renderDaily() {
-  currentDayIndex = clampDay(currentDayIndex);
-  localStorage.setItem("workEnglishStudyDay", String(currentDayIndex));
-  const { week, day } = dayToWeekDay(currentDayIndex);
-  const visibleCards = dayCards();
-
-  document.getElementById("week-day-label").textContent = `Week ${week} / Day ${day}`;
-  document.getElementById("day-count-label").textContent = `Day ${currentDayIndex} of ${TOTAL_DAYS}`;
-  document.getElementById("prev-day").disabled = currentDayIndex <= 1;
-  document.getElementById("next-day").disabled = currentDayIndex >= TOTAL_DAYS;
-
-  const masteredForDay = visibleCards.filter((card) => getStatus(card.id) === "Mastered").length;
-  document.getElementById("day-progress").textContent =
-    `${visibleCards.length} cards today · ${masteredForDay} mastered`;
-  document.getElementById("cards").innerHTML = visibleCards.map(cardHtml).join("");
-}
-
-function renderTagReview() {
-  const results = filteredCards();
-  document.getElementById("day-progress").textContent = activeFilter
-    ? `Showing ${results.length} cards for ${filterLabel(activeFilter)}`
-    : `Showing all ${results.length} cards. Choose a filter above or click any card badge.`;
-  document.getElementById("cards").innerHTML = results.map(reviewCardHtml).join("");
-  renderFilterControls(results.length);
-}
-
-function renderNeedReview() {
-  const results = cards.filter((card) => getStatus(card.id) === "Need review");
-  document.getElementById("day-progress").textContent = `${results.length} cards marked Need review`;
-  document.getElementById("cards").innerHTML = results.length
-    ? results.map(reviewCardHtml).join("")
-    : `<article class="card"><strong>No cards need review.</strong><p>Cards marked Need review will appear here.</p></article>`;
+function renderPatterns() {
+  const patterns = Array.from(new Set(cards.map((card) => card.pattern).filter(Boolean))).sort();
+  const selectedCards = selectedPattern ? cards.filter((card) => card.pattern === selectedPattern) : [];
+  document.getElementById("view-patterns").innerHTML = `
+    <div class="section-title">표현 패턴</div>
+    ${patterns.map((pattern) => `<article class="pattern-card" data-pattern="${escapeHtml(pattern)}">
+      <strong>${escapeHtml(pattern)}</strong>
+      <p class="flash-sub">${cards.filter((card) => card.pattern === pattern).length} cards</p>
+    </article>`).join("")}
+    ${selectedPattern ? `<div class="section-title">선택한 패턴</div>${selectedCards.map(sentenceCard).join("")}` : ""}
+  `;
 }
 
 function render() {
-  localStorage.setItem("workEnglishStudyMode", activeMode);
-  renderModeMenu();
-  document.querySelector(".day-nav").classList.toggle("hidden", activeMode !== "daily");
-  document.getElementById("filter-panel").classList.toggle("hidden", activeMode !== "tag");
+  state.currentDay = clampDay(Number(state.currentDay) || 1);
+  updateCompletedDays();
+  saveState();
+  renderDashboard();
+  document.querySelectorAll(".view").forEach((view) => view.classList.remove("on"));
+  document.getElementById(`view-${state.activeView}`).classList.add("on");
+  document.querySelectorAll(".nav-btn").forEach((button) => button.classList.toggle("on", button.dataset.view === state.activeView));
+  renderToday();
+  renderCardsView();
+  renderSituations();
+  renderRoadmap();
+  renderPatterns();
+  bindEvents();
+}
 
-  if (activeMode === "daily") {
-    renderDaily();
-  } else if (activeMode === "tag") {
-    renderTagReview();
-  } else {
-    renderNeedReview();
-  }
-  bindCardEvents();
-  updateSpeechSupportMessage();
-  updateSummary();
+function bindEvents() {
+  document.querySelectorAll(".nav-btn").forEach((button) => {
+    button.onclick = () => { state.activeView = button.dataset.view; flashFlipped = false; saveState(); render(); };
+  });
+  const prevDay = document.getElementById("prev-day");
+  const nextDay = document.getElementById("next-day");
+  if (prevDay) prevDay.onclick = () => { state.currentDay = clampDay(state.currentDay - 1); render(); };
+  if (nextDay) nextDay.onclick = () => { state.currentDay = clampDay(state.currentDay + 1); render(); };
+  document.querySelectorAll("[data-toggle-answer]").forEach((button) => {
+    button.onclick = () => {
+      const target = document.getElementById(`answer-${button.dataset.toggleAnswer}`);
+      target.classList.toggle("hidden");
+      button.textContent = target.classList.contains("hidden") ? "Show Answer" : "Hide Answer";
+    };
+  });
+  document.querySelectorAll("[data-speak-card]").forEach((button) => {
+    button.onclick = () => {
+      const card = cards.find((item) => item.id === button.dataset.speakCard);
+      if (card) speak(card.english);
+    };
+  });
+  document.querySelectorAll("[data-status-card]").forEach((button) => {
+    button.onclick = () => setStatus(button.dataset.statusCard, button.dataset.statusValue);
+  });
+  document.querySelectorAll("[data-filter-field]").forEach((button) => {
+    button.onclick = () => {
+      state.selectedFilter[button.dataset.filterField] = button.dataset.filterValue;
+      flashIndex = 0;
+      flashFlipped = false;
+      render();
+    };
+  });
+  const flashcard = document.getElementById("flashcard");
+  if (flashcard) flashcard.onclick = () => { flashFlipped = !flashFlipped; render(); };
+  const prevCard = document.getElementById("prev-card");
+  const nextCard = document.getElementById("next-card");
+  if (prevCard) prevCard.onclick = () => { const deck = filteredFlashCards(); flashIndex = (flashIndex - 1 + deck.length) % deck.length; flashFlipped = false; render(); };
+  if (nextCard) nextCard.onclick = () => { const deck = filteredFlashCards(); flashIndex = (flashIndex + 1) % deck.length; flashFlipped = false; render(); };
+  document.querySelectorAll("[data-situation]").forEach((item) => {
+    item.onclick = () => { selectedSituation = selectedSituation === item.dataset.situation ? null : item.dataset.situation; render(); };
+  });
+  document.querySelectorAll("[data-go-day]").forEach((item) => {
+    item.onclick = () => { state.currentDay = Number(item.dataset.goDay); state.activeView = "today"; render(); };
+  });
+  document.querySelectorAll("[data-pattern]").forEach((item) => {
+    item.onclick = () => { selectedPattern = selectedPattern === item.dataset.pattern ? null : item.dataset.pattern; render(); };
+  });
 }
 
 async function init() {
-  currentDayIndex = clampDay(currentDayIndex);
-  refreshVoices();
-  if (speechSupported()) {
-    window.speechSynthesis.onvoiceschanged = () => {
-      refreshVoices();
-      updateSpeechSupportMessage();
-    };
+  if ("speechSynthesis" in window) {
+    voices = window.speechSynthesis.getVoices();
+    window.speechSynthesis.onvoiceschanged = () => { voices = window.speechSynthesis.getVoices(); };
   }
   const response = await fetch("data/sentences.json");
-  if (!response.ok) {
-    throw new Error("Could not load data/sentences.json");
-  }
+  if (!response.ok) throw new Error("Could not load data/sentences.json");
   cards = await response.json();
   render();
 }
 
-document.getElementById("prev-day").addEventListener("click", () => {
-  currentDayIndex = clampDay(currentDayIndex - 1);
-  render();
-});
-
-document.getElementById("next-day").addEventListener("click", () => {
-  currentDayIndex = clampDay(currentDayIndex + 1);
-  render();
-});
-
-document.querySelectorAll("[data-mode]").forEach((button) => {
-  button.addEventListener("click", () => {
-    activeMode = button.getAttribute("data-mode");
-    render();
-  });
-});
-
-document.getElementById("clear-filter").addEventListener("click", clearFilter);
-document.getElementById("voice-mode").addEventListener("change", () => window.speechSynthesis?.cancel());
-document.getElementById("voice-rate").addEventListener("change", () => window.speechSynthesis?.cancel());
-
 init().catch((error) => {
-  document.getElementById("cards").innerHTML =
-    `<article class="card"><strong>Failed to load study data.</strong><p>${escapeHtml(error.message)}</p></article>`;
+  document.querySelector("main").innerHTML = `<p class="note">Loading failed: ${escapeHtml(error.message)}</p>`;
 });
