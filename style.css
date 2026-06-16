@@ -497,6 +497,28 @@ details p, details ul { margin: 8px 0; }
 }
 
 @media (max-width: 640px) {
+  body,
+  .app,
+  .sentence-card {
+    max-width: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+  .sentence-card {
+    padding: 15px 12px 12px 14px;
+  }
+  .meta-row {
+    gap: 4px;
+    margin-bottom: 8px;
+  }
+  .badge,
+  .chip {
+    max-width: 100%;
+    min-height: 20px;
+    padding: 1px 5px;
+    font-size: 9.5px;
+    white-space: normal;
+  }
   .answer-actions,
   .state-row,
   .judge-row {
@@ -508,14 +530,17 @@ details p, details ul { margin: 8px 0; }
   }
   .btn {
     flex: 0 1 auto;
+    width: auto;
+    max-width: 100%;
     min-height: 32px;
-    padding: 3px 7px;
-    font-size: 11.5px;
+    padding: 5px 8px;
+    font-size: 12px;
     border-radius: 6px;
   }
   .btn.primary {
-    min-height: 34px;
+    min-height: 32px;
     flex: 0 1 auto;
+    width: auto;
     padding-inline: 9px;
   }
   .icon-btn,
@@ -528,8 +553,12 @@ details p, details ul { margin: 8px 0; }
   .state-label {
     flex: 1 1 100%;
     margin-right: 0;
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1.2;
+  }
+  .state-row .btn,
+  .judge-row .btn {
+    min-width: 52px;
   }
   .bottom-nav {
     padding-left: 6px;
@@ -540,8 +569,8 @@ details p, details ul { margin: 8px 0; }
   }
   .nav-btn {
     min-height: 32px;
-    padding: 4px 2px;
-    font-size: 10.5px;
+    padding: 5px 2px;
+    font-size: 11px;
     line-height: 1.15;
     text-align: center;
   }
@@ -586,9 +615,10 @@ details p, details ul { margin: 8px 0; }
   }
   .badge,
   .chip {
-    min-height: 21px;
-    padding: 1px 6px;
-    font-size: 10px;
+    min-height: 20px;
+    padding: 1px 5px;
+    font-size: 9.5px;
+    white-space: normal;
   }
   .ko {
     margin: 6px 0 10px;
@@ -612,11 +642,11 @@ details p, details ul { margin: 8px 0; }
   .btn {
     flex: 0 1 auto;
     min-height: 32px;
-    padding: 3px 7px;
-    font-size: 11.5px;
+    padding: 5px 8px;
+    font-size: 12px;
   }
   .btn.primary {
-    min-height: 34px;
+    min-height: 32px;
     flex: 0 1 auto;
   }
   .icon-btn {
