@@ -1,16 +1,36 @@
 :root {
-  --paper: #F6F1E8;
-  --surface: #FFFDF8;
-  --surface-2: #F2EEE6;
-  --ink: #171717;
-  --muted: #6B7280;
-  --line: #DED6C8;
-  --primary: #374151;
-  --primary-soft: #EEE8DC;
-  --sage: #8A8174;
-  --olive: #6B7280;
-  --olive-soft: #F7F3EB;
-  --gray-soft: #FAF7F0;
+  --color-bg: #F5EFE3;
+  --color-bg-soft: #FBF7EE;
+  --color-surface: #FFFAF1;
+  --color-surface-muted: #F0E7D8;
+  --color-border: #DED2BD;
+  --color-border-soft: #EADFCD;
+  --color-border-strong: #C9B99E;
+  --color-text: #2B241C;
+  --color-text-secondary: #5F5142;
+  --color-text-muted: #7A6A58;
+  --color-text-faint: #A3917B;
+  --color-primary: #6F5B43;
+  --color-primary-hover: #594833;
+  --color-primary-text: #FFFAF1;
+  --color-secondary-bg: #FFFAF1;
+  --color-secondary-hover: #F0E7D8;
+  --color-chip-bg: #EEE2CF;
+  --color-chip-text: #6A5A47;
+  --color-chip-border: #DCCBB3;
+  --color-focus: #9A7B4F;
+  --paper: var(--color-bg);
+  --surface: var(--color-surface);
+  --surface-2: var(--color-surface-muted);
+  --ink: var(--color-text);
+  --muted: var(--color-text-muted);
+  --line: var(--color-border);
+  --primary: var(--color-primary);
+  --primary-soft: var(--color-chip-bg);
+  --sage: var(--color-focus);
+  --olive: var(--color-text-muted);
+  --olive-soft: var(--color-bg-soft);
+  --gray-soft: var(--color-bg-soft);
   --space-xs: 4px;
   --space-sm: 8px;
   --space-md: 12px;
@@ -44,7 +64,7 @@ button {
 }
 button:focus-visible,
 summary:focus-visible {
-  outline: 2px solid #A8A093;
+  outline: 2px solid var(--color-focus);
   outline-offset: 2px;
 }
 
@@ -133,7 +153,7 @@ h1 {
 
 .view { display: none; animation: rise .25s ease both; }
 .view.on { display: block; }
-@keyframes rise { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes rise { from { opacity: 0; transform: matrix(1, 0, 0, 1, 0, 8); } to { opacity: 1; transform: none; } }
 main { margin-top: 10px; }
 .section-title {
   margin: 14px 0 8px;
@@ -195,7 +215,7 @@ main { margin-top: 10px; }
 .sentence-card {
   padding: 18px 16px 16px 18px;
   margin: 2px 0 12px;
-  border-color: #CFC4B4;
+  border-color: var(--color-border-strong);
   box-shadow: 0 6px 16px rgba(51,41,30,.055);
 }
 .sentence-card::before,
@@ -218,9 +238,9 @@ main { margin-top: 10px; }
 .chip {
   display: inline-flex;
   align-items: center;
-  border: 1px solid var(--line);
-  background: var(--surface-2);
-  color: var(--muted);
+  border: 1px solid var(--color-chip-border);
+  background: var(--color-chip-bg);
+  color: var(--color-chip-text);
   border-radius: var(--radius-sm);
   min-height: 20px;
   padding: 1px 6px;
@@ -234,7 +254,7 @@ button.badge,
 }
 .chip.on {
   background: var(--primary);
-  color: #fff;
+  color: var(--color-primary-text);
   border-color: var(--primary);
 }
 .ko {
@@ -253,9 +273,9 @@ button.badge,
   margin-top: 10px;
 }
 .btn {
-  border: 1px solid var(--line);
-  background: var(--surface);
-  color: var(--primary);
+  border: 1px solid var(--color-border);
+  background: var(--color-secondary-bg);
+  color: var(--color-text-secondary);
   min-height: 31px;
   border-radius: var(--radius-md);
   padding: 3px 9px;
@@ -265,12 +285,12 @@ button.badge,
   box-shadow: none;
 }
 .btn:hover {
-  border-color: #CFC4B4;
-  background: var(--gray-soft);
+  border-color: var(--color-border-strong);
+  background: var(--color-secondary-hover);
 }
 .btn:disabled { opacity: .4; cursor: not-allowed; }
-.btn.primary { min-height: 36px; background: var(--primary); border-color: var(--primary); color: #fff; padding-inline: 12px; }
-.btn.primary:hover { background: #1E293B; border-color: #1E293B; }
+.btn.primary { min-height: 36px; background: var(--primary); border-color: var(--primary); color: var(--color-primary-text); padding-inline: 12px; }
+.btn.primary:hover { background: var(--color-primary-hover); border-color: var(--color-primary-hover); }
 .btn.olive { background: var(--olive-soft); border-color: var(--line); color: var(--primary); }
 .btn.gray { background: var(--gray-soft); color: var(--muted); }
 .btn.on { box-shadow: inset 0 0 0 1.5px currentColor; }
@@ -371,7 +391,7 @@ details p, details ul { margin: 8px 0; }
 }
 .day-cell.done {
   background: var(--primary-soft);
-  border-color: #CFC4B4;
+  border-color: var(--color-border-strong);
 }
 
 .bottom-nav {
