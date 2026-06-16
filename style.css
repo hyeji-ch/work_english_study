@@ -1,33 +1,35 @@
 :root {
-  --color-bg: #F5EFE3;
-  --color-bg-soft: #FBF7EE;
-  --color-surface: #FFFAF1;
-  --color-surface-muted: #F0E7D8;
-  --color-border: #DED2BD;
-  --color-border-soft: #EADFCD;
-  --color-border-strong: #C9B99E;
-  --color-text: #2B241C;
-  --color-text-secondary: #5F5142;
-  --color-text-muted: #7A6A58;
-  --color-text-faint: #A3917B;
-  --color-primary: #6F5B43;
-  --color-primary-hover: #594833;
-  --color-primary-text: #FFFAF1;
-  --color-secondary-bg: #FFFAF1;
-  --color-secondary-hover: #F0E7D8;
-  --color-chip-bg: #EEE2CF;
-  --color-chip-text: #6A5A47;
-  --color-chip-border: #DCCBB3;
-  --color-focus: #9A7B4F;
+  --color-bg: #F8F5EE;
+  --color-bg-soft: #FBF8F1;
+  --color-surface: #FFFDF7;
+  --color-surface-muted: #F2EEE5;
+  --color-border: #E3DCCF;
+  --color-border-soft: #EEE7DA;
+  --color-border-strong: #D2C8B8;
+  --color-text: #25221D;
+  --color-text-secondary: #5D574F;
+  --color-text-muted: #7C7469;
+  --color-text-faint: #AAA195;
+  --color-button-bg: #FFFDF7;
+  --color-button-hover: #F2EEE5;
+  --color-button-border: #DCD3C3;
+  --color-button-text: #4F4941;
+  --color-active-bg: #EBE4D8;
+  --color-active-border: #CFC4B3;
+  --color-active-text: #25221D;
+  --color-focus: rgba(120, 111, 96, 0.28);
+  --color-chip-bg: #F1ECE3;
+  --color-chip-border: #DDD4C5;
+  --color-chip-text: #625C52;
   --paper: var(--color-bg);
   --surface: var(--color-surface);
   --surface-2: var(--color-surface-muted);
   --ink: var(--color-text);
   --muted: var(--color-text-muted);
   --line: var(--color-border);
-  --primary: var(--color-primary);
+  --primary: var(--color-text-secondary);
   --primary-soft: var(--color-chip-bg);
-  --sage: var(--color-focus);
+  --sage: var(--color-border-strong);
   --olive: var(--color-text-muted);
   --olive-soft: var(--color-bg-soft);
   --gray-soft: var(--color-bg-soft);
@@ -64,7 +66,7 @@ button {
 }
 button:focus-visible,
 summary:focus-visible {
-  outline: 2px solid rgba(154, 123, 79, 0.35);
+  outline: 2px solid var(--color-focus);
   outline-offset: 2px;
 }
 
@@ -187,14 +189,14 @@ main { margin-top: 10px; }
   font-weight: 800;
 }
 .round-btn:hover {
-  background: var(--color-secondary-hover);
+  background: var(--color-button-hover);
   border-color: var(--color-border-strong);
   color: var(--color-text);
 }
 .round-btn:active {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
-  color: var(--color-primary-text);
+  background: var(--color-active-bg);
+  border-color: var(--color-active-border);
+  color: var(--color-active-text);
 }
 .round-btn:disabled { opacity: .38; cursor: not-allowed; }
 
@@ -263,9 +265,9 @@ button.badge,
   cursor: pointer;
 }
 .chip.on {
-  background: var(--color-primary);
-  color: var(--color-primary-text);
-  border-color: var(--color-primary);
+  background: var(--color-active-bg);
+  color: var(--color-active-text);
+  border-color: var(--color-active-border);
 }
 .ko {
   margin: 10px 0 12px;
@@ -284,9 +286,9 @@ button.badge,
   max-width: 100%;
 }
 .btn {
-  border: 1px solid var(--color-border);
-  background: var(--color-secondary-bg);
-  color: var(--color-text-secondary);
+  border: 1px solid var(--color-button-border);
+  background: var(--color-button-bg);
+  color: var(--color-button-text);
   min-height: 31px;
   border-radius: var(--radius-md);
   padding: 3px 8px;
@@ -300,12 +302,12 @@ button.badge,
 }
 .btn:hover {
   border-color: var(--color-border-strong);
-  background: var(--color-secondary-hover);
+  background: var(--color-button-hover);
   color: var(--color-text);
 }
 .btn:disabled { opacity: .4; cursor: not-allowed; }
-.btn.primary { min-height: 36px; background: var(--color-secondary-bg); border-color: var(--color-border); color: var(--color-text-secondary); padding-inline: 12px; }
-.btn.primary:hover { background: var(--color-secondary-hover); border-color: var(--color-border-strong); color: var(--color-text); }
+.btn.primary { min-height: 36px; background: var(--color-button-bg); border-color: var(--color-button-border); color: var(--color-button-text); padding-inline: 12px; }
+.btn.primary:hover { background: var(--color-button-hover); border-color: var(--color-border-strong); color: var(--color-text); }
 .btn.olive { background: var(--olive-soft); border-color: var(--line); color: var(--color-text-secondary); }
 .btn.gray { background: var(--gray-soft); color: var(--muted); }
 .btn:active,
@@ -318,9 +320,9 @@ button.badge,
 .btn[aria-selected="true"],
 button[data-state="active"],
 .btn.on {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
-  color: var(--color-primary-text);
+  background: var(--color-active-bg);
+  border-color: var(--color-active-border);
+  color: var(--color-active-text);
   box-shadow: none;
 }
 .icon-btn {
@@ -419,14 +421,14 @@ details p, details ul { margin: 8px 0; }
   cursor: pointer;
 }
 .day-cell:hover {
-  background: var(--color-secondary-hover);
+  background: var(--color-button-hover);
   border-color: var(--color-border-strong);
   color: var(--color-text);
 }
 .day-cell.done {
-  background: var(--color-primary);
-  border-color: var(--color-primary);
-  color: var(--color-primary-text);
+  background: var(--color-active-bg);
+  border-color: var(--color-active-border);
+  color: var(--color-active-text);
 }
 
 .bottom-nav {
@@ -469,13 +471,13 @@ details p, details ul { margin: 8px 0; }
   line-height: 1;
 }
 .nav-btn.on {
-  color: var(--color-primary-text);
-  background: var(--color-primary);
-  box-shadow: none;
+  color: var(--color-active-text);
+  background: var(--color-active-bg);
+  box-shadow: inset 0 0 0 1px var(--color-active-border);
 }
 .nav-btn:hover {
   color: var(--color-text);
-  background: var(--color-secondary-hover);
+  background: var(--color-button-hover);
 }
 .nav-btn:active,
 .nav-btn.active,
@@ -484,8 +486,9 @@ details p, details ul { margin: 8px 0; }
 .nav-btn.is-selected,
 .nav-btn[aria-pressed="true"],
 .nav-btn[aria-selected="true"] {
-  color: var(--color-primary-text);
-  background: var(--color-primary);
+  color: var(--color-active-text);
+  background: var(--color-active-bg);
+  box-shadow: inset 0 0 0 1px var(--color-active-border);
 }
 .note {
   color: var(--muted);
