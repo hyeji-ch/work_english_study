@@ -92,9 +92,10 @@ function badge(text, extra = "") {
 function stateButtons(card) {
   const current = statusOf(card.id);
   return `<div class="state-row">
+    <span class="state-label">학습 상태</span>
     <button class="btn gray ${current === "Not studied" ? "on" : ""}" data-status-card="${card.id}" data-status-value="Not studied">아직</button>
     <button class="btn primary ${current === "Mastered" ? "on" : ""}" data-status-card="${card.id}" data-status-value="Mastered">익혔다</button>
-    <button class="btn olive ${current === "Need review" ? "on" : ""}" data-status-card="${card.id}" data-status-value="Need review">다시 볼 문장</button>
+    <button class="btn olive ${current === "Need review" ? "on" : ""}" data-status-card="${card.id}" data-status-value="Need review" title="다시 볼 문장" aria-label="다시 볼 문장">다시</button>
   </div>`;
 }
 
@@ -121,8 +122,8 @@ function sentenceCard(card) {
     </div>
     <div class="ko">${escapeHtml(card.korean)}</div>
     <div class="answer-actions">
-      <button class="btn" data-toggle-answer="${card.id}">Show Answer</button>
-      <button class="btn" data-speak-card="${card.id}">🔊 발음</button>
+      <button class="btn primary" data-toggle-answer="${card.id}">정답 보기</button>
+      <button class="btn icon-btn" data-speak-card="${card.id}" title="발음 듣기" aria-label="발음 듣기">🔊</button>
     </div>
     ${answerBlock(card)}
     ${stateButtons(card)}
