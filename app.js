@@ -1,5 +1,6 @@
 const TOTAL_DAYS = 30;
 const DAYS_PER_WEEK = 5;
+const DATA_VERSION = "20260622-150-v2";
 const STATE_KEY = "workEnglish:state";
 
 let cards = [];
@@ -351,7 +352,7 @@ async function init() {
     voices = window.speechSynthesis.getVoices();
     window.speechSynthesis.onvoiceschanged = () => { voices = window.speechSynthesis.getVoices(); };
   }
-  const response = await fetch("data/sentences.json");
+  const response = await fetch(`data/sentences.json?v=${DATA_VERSION}`, { cache: "no-store" });
   if (!response.ok) throw new Error("Could not load data/sentences.json");
   cards = await response.json();
   render();
