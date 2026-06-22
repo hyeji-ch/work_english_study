@@ -1,5 +1,5 @@
-const TOTAL_DAYS = 56;
-const DAYS_PER_WEEK = 7;
+const TOTAL_DAYS = 30;
+const DAYS_PER_WEEK = 5;
 const STATE_KEY = "workEnglish:state";
 
 let cards = [];
@@ -154,7 +154,7 @@ function dayCards() {
 
 function renderDashboard() {
   const counts = dashboardCounts();
-  document.getElementById("dash-day").innerHTML = `${state.currentDay}<span class="small">/56</span>`;
+  document.getElementById("dash-day").innerHTML = `${state.currentDay}<span class="small">/30</span>`;
   document.getElementById("dash-mastered").textContent = counts.mastered;
   document.getElementById("dash-review").textContent = counts.review;
 }
@@ -254,11 +254,11 @@ function renderRoadmap() {
     return { week: Number(week), category };
   });
   document.getElementById("view-roadmap").innerHTML = `
-    <div class="section-title">8주 로드맵</div>
+    <div class="section-title">6주 로드맵</div>
     ${weekTitles.map((weekInfo) => `<section class="week-block">
       <h3 class="week-title">Week ${weekInfo.week}</h3>
       <p class="week-sub">${escapeHtml(weekInfo.category)}</p>
-      <div class="week-days">${Array.from({ length: 7 }, (_, index) => {
+      <div class="week-days">${Array.from({ length: 5 }, (_, index) => {
         const day = index + 1;
         const dayIndex = weekDayToIndex(weekInfo.week, day);
         const done = state.completedDays[String(dayIndex)];
