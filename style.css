@@ -1,16 +1,16 @@
 :root {
-  --paper: #F6F7F9;
-  --surface: #FFFFFF;
-  --surface-2: #F3F6FA;
-  --ink: #17202A;
-  --muted: #6B7280;
-  --line: #E5E7EB;
-  --primary: #1F4E79;
-  --primary-soft: #EAF2FF;
-  --sage: #3F6F99;
-  --olive: #64748B;
-  --olive-soft: #F1F5F9;
-  --gray-soft: #F3F4F6;
+  --paper: #F7F1E6;
+  --surface: #FFFaf0;
+  --surface-2: #F3E8D6;
+  --ink: #2F261D;
+  --muted: #7A6A59;
+  --line: #E4D4BF;
+  --primary: #7A4E2D;
+  --primary-soft: #EFE1CE;
+  --sage: #7C8A67;
+  --olive: #8A7658;
+  --olive-soft: #EEE5D7;
+  --gray-soft: #EFE8DE;
   --space-xs: 4px;
   --space-sm: 8px;
   --space-md: 12px;
@@ -18,8 +18,8 @@
   --radius-sm: 8px;
   --radius-md: 10px;
   --radius-lg: 10px;
-  --shadow-sm: 0 1px 3px rgba(23,32,42,.05);
-  --shadow-md: 0 8px 20px rgba(23,32,42,.06);
+  --shadow-sm: 0 1px 3px rgba(47,38,29,.06);
+  --shadow-md: 0 8px 20px rgba(47,38,29,.08);
 }
 
 * { box-sizing: border-box; }
@@ -219,7 +219,7 @@ button.badge,
 }
 .btn:disabled { opacity: .4; cursor: not-allowed; }
 .btn.primary { min-height: 40px; background: var(--primary); border-color: var(--primary); color: #fff; }
-.btn.olive { background: var(--olive-soft); border-color: #CBD5E1; color: #334155; }
+.btn.olive { background: var(--olive-soft); border-color: #D8C7AF; color: #5D4C37; }
 .btn.gray { background: var(--gray-soft); color: var(--muted); }
 .btn.on { box-shadow: inset 0 0 0 1.5px currentColor; }
 .icon-btn {
@@ -325,7 +325,7 @@ details p, details ul { margin: 8px 0; }
   right: 0;
   bottom: 0;
   z-index: 40;
-  background: rgba(255,255,255,.94);
+  background: rgba(255,250,240,.94);
   backdrop-filter: blur(10px);
   border-top: 1px solid var(--line);
   padding: 4px 8px calc(4px + env(safe-area-inset-bottom));
