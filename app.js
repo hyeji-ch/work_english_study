@@ -1,6 +1,6 @@
 const TOTAL_DAYS = 30;
 const DAYS_PER_WEEK = 5;
-const DATA_VERSION = "20260622-150-v3";
+const DATA_VERSION = "20260622-150-v4";
 const STATE_KEY = "workEnglish:state";
 
 let cards = [];
